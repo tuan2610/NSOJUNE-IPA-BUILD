@@ -1,0 +1,184 @@
+name: Build IPA from Xcode Export
+
+on:
+  workflow_dispatch:
+    inputs:
+      export_method:
+        description: "IPA export method"
+        required: true
+        default: "ad-hoc"
+        type: choice
+        options:
+          - ad-hoc
+          - app-store
+          - development
+
+permissions:
+  contents: read
+
+jobs:
+  build-ipa:
+    name: Build IPA
+    runs-on: macos-latest
+    timeout-minutes: 120
+
+    env:
+      IOS_BUNDLE_ID: ${{ vars.IOS_BUNDLE_ID }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      IOS_CERTIFICATE_BASE64: ${{ secrets.IOS_CERTIFICATE_BASE64 }}
+      IOS_CERTIFICATE_PASSWORD: ${{ secrets.IOS_CERTIFICATE_PASSWORD }}
+      IOS_PROVISION_PROFILE_BASE64: ${{ secrets.IOS_PROVISION_PROFILE_BASE64 }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Validate required secrets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          if [ -z "${IOS_BUNDLE_ID:-}" ]; then
+            IOS_BUNDLE_ID="com.NSOJUNE.NSOJUNE"
+          fi
+          echo "IOS_BUNDLE_ID=$IOS_BUNDLE_ID" >> "$GITHUB_ENV"
+
+          missing=0
+          for name in APPLE_TEAM_ID IOS_CERTIFICATE_BASE64 IOS_CERTIFICATE_PASSWORD IOS_PROVISION_PROFILE_BASE64; do
+            if [ -z "${!name:-}" ]; then
+              echo "::error::$name is not set in GitHub Secrets."
+              missing=1
+            fi
+          done
+
+          if [ "$missing" -ne 0 ]; then
+            exit 1
+          fi
+
+      - name: Install Apple signing assets
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          CERTIFICATE_PATH="$RUNNER_TEMP/build_certificate.p12"
+          PROFILE_PATH="$RUNNER_TEMP/build_profile.mobileprovision"
+          PROFILE_PLIST="$RUNNER_TEMP/build_profile.plist"
+          KEYCHAIN_PATH="$RUNNER_TEMP/app-signing.keychain-db"
+          KEYCHAIN_PASSWORD="$(uuidgen)"
+
+          decode_base64() {
+            local value="$1"
+            local output="$2"
+            echo "$value" | base64 --decode > "$output" 2>/dev/null || echo "$value" | base64 -D > "$output"
+          }
+
+          decode_base64 "$IOS_CERTIFICATE_BASE64" "$CERTIFICATE_PATH"
+          decode_base64 "$IOS_PROVISION_PROFILE_BASE64" "$PROFILE_PATH"
+
+          security create-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security set-keychain-settings -lut 21600 "$KEYCHAIN_PATH"
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security import "$CERTIFICATE_PATH" -P "$IOS_CERTIFICATE_PASSWORD" -A -t cert -f pkcs12 -k "$KEYCHAIN_PATH"
+          security set-key-partition-list -S apple-tool:,apple: -k "$KEYCHAIN_PASSWORD" "$KEYCHAIN_PATH"
+          security list-keychain -d user -s "$KEYCHAIN_PATH"
+          security find-identity -v -p codesigning "$KEYCHAIN_PATH"
+
+          mkdir -p "$HOME/Library/MobileDevice/Provisioning Profiles"
+          security cms -D -i "$PROFILE_PATH" > "$PROFILE_PLIST"
+          PROFILE_UUID=$(/usr/libexec/PlistBuddy -c "Print UUID" "$PROFILE_PLIST")
+          PROFILE_NAME=$(/usr/libexec/PlistBuddy -c "Print Name" "$PROFILE_PLIST")
+          cp "$PROFILE_PATH" "$HOME/Library/MobileDevice/Provisioning Profiles/$PROFILE_UUID.mobileprovision"
+
+          echo "PROFILE_NAME=$PROFILE_NAME" >> "$GITHUB_ENV"
+          echo "KEYCHAIN_PATH=$KEYCHAIN_PATH" >> "$GITHUB_ENV"
+
+      - name: Prepare Unity Xcode export
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          find . -type f \( -name "*.sh" -o -name "usymtool*" -o -name "il2cpp" -o -name "bee_backend" \) -exec chmod +x {} \;
+
+          if [ -f "Podfile" ]; then
+            sudo gem install cocoapods
+            pod install
+          fi
+
+          if [ -d "Unity-iPhone.xcworkspace" ]; then
+            echo "XCODE_CONTAINER_FLAG=-workspace" >> "$GITHUB_ENV"
+            echo "XCODE_CONTAINER_PATH=Unity-iPhone.xcworkspace" >> "$GITHUB_ENV"
+          else
+            echo "XCODE_CONTAINER_FLAG=-project" >> "$GITHUB_ENV"
+            echo "XCODE_CONTAINER_PATH=Unity-iPhone.xcodeproj" >> "$GITHUB_ENV"
+          fi
+
+      - name: Archive app
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          xcodebuild \
+            "$XCODE_CONTAINER_FLAG" "$XCODE_CONTAINER_PATH" \
+            -scheme Unity-iPhone \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination "generic/platform=iOS" \
+            -archivePath "$RUNNER_TEMP/NSOJUNE.xcarchive" \
+            DEVELOPMENT_TEAM="$APPLE_TEAM_ID" \
+            CODE_SIGN_STYLE=Manual \
+            PROVISIONING_PROFILE_SPECIFIER="$PROFILE_NAME" \
+            PRODUCT_BUNDLE_IDENTIFIER="$IOS_BUNDLE_ID" \
+            clean archive
+
+      - name: Export IPA
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          mkdir -p ipa
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key>
+            <string>${{ inputs.export_method }}</string>
+            <key>teamID</key>
+            <string>$APPLE_TEAM_ID</string>
+            <key>signingStyle</key>
+            <string>manual</string>
+            <key>provisioningProfiles</key>
+            <dict>
+              <key>$IOS_BUNDLE_ID</key>
+              <string>$PROFILE_NAME</string>
+            </dict>
+            <key>stripSwiftSymbols</key>
+            <true/>
+            <key>compileBitcode</key>
+            <false/>
+          </dict>
+          </plist>
+          EOF
+
+          xcodebuild \
+            -exportArchive \
+            -archivePath "$RUNNER_TEMP/NSOJUNE.xcarchive" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -exportPath ipa
+
+      - name: Upload IPA artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NSOJUNE-${{ inputs.export_method }}-ipa
+          path: ipa/*.ipa
+          if-no-files-found: error
+
+      - name: Cleanup signing keychain
+        if: always()
+        shell: bash
+        run: |
+          if [ -n "${KEYCHAIN_PATH:-}" ]; then
+            security delete-keychain "$KEYCHAIN_PATH" || true
+          fi

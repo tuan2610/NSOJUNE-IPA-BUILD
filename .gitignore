@@ -1,0 +1,38 @@
+# Xcode generated files
+/build/
+/DerivedData/
+*.xcarchive
+*.ipa
+*.dSYM/
+*.xcresult
+*.moved-aside
+
+# User-local Xcode state
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# CocoaPods generated state, if pods are regenerated on CI
+Pods/
+Podfile.lock
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+.vs/
+
+# Signing secrets - never commit these
+*.p12
+*.cer
+*.mobileprovision
+*.provisionprofile
+*.certSigningRequest
+ExportOptions.plist
+
+# Local archives/backups
+*.zip
+*.rar
+*.7z
