@@ -12,10 +12,6 @@ xcuserdata/
 *.xcuserstate
 *.xcscmblueprint
 
-# CocoaPods generated state, if pods are regenerated on CI
-Pods/
-Podfile.lock
-
 # OS/editor files
 .DS_Store
 Thumbs.db
