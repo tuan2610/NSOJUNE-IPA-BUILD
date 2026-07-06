@@ -1,8 +1,7 @@
 # Build IPA from this Xcode export
 
-This folder is a Unity iOS Xcode export. GitHub Actions builds the IPA directly from `Unity-iPhone.xcodeproj`.
-
-## Git LFS
+This folder is a Unity iOS Xcode export. GitHub Actions builds the IPA directly
+from `Unity-iPhone.xcodeproj`.
 
 Large Unity export files are tracked through Git LFS:
 
@@ -10,9 +9,7 @@ Large Unity export files are tracked through Git LFS:
 - `Libraries/*.a`
 - `*.resS`
 
-## Required GitHub Secrets
-
-Add these repository secrets before running the build:
+Required GitHub repository secrets:
 
 - `APPLE_TEAM_ID`
 - `IOS_CERTIFICATE_BASE64`
