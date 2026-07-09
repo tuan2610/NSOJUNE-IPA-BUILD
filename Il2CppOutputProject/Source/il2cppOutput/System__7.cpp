@@ -8744,7 +8744,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8
 		Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_0 = ((DigestClient_t4162E8D65872D0F4BBDDEB3F83BF2B7BBBAEEEAB_StaticFields*)il2cpp_codegen_static_fields_for(DigestClient_t4162E8D65872D0F4BBDDEB3F83BF2B7BBBAEEEAB_il2cpp_TypeInfo_var))->___cache;
 		NullCheck(L_0);
 		RuntimeObject* L_1;
-		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(28, L_0);
+		L_1 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(29, L_0);
 		V_0 = L_1;
 		V_1 = (bool)0;
 	}
@@ -8780,7 +8780,7 @@ IL_002f:
 			Hashtable_tEFC3B6496E6747787D8BB761B51F2AE3A8CFFE2D* L_5 = ((DigestClient_t4162E8D65872D0F4BBDDEB3F83BF2B7BBBAEEEAB_StaticFields*)il2cpp_codegen_static_fields_for(DigestClient_t4162E8D65872D0F4BBDDEB3F83BF2B7BBBAEEEAB_il2cpp_TypeInfo_var))->___cache;
 			NullCheck(L_5);
 			int32_t L_6;
-			L_6 = VirtualFuncInvoker0< int32_t >::Invoke(29, L_5);
+			L_6 = VirtualFuncInvoker0< int32_t >::Invoke(30, L_5);
 			DigestClient_CheckExpired_m7D91E904F94658F9FB6363F518F6D33AB9C23025(L_6, NULL);
 			goto IL_0030;
 		}
@@ -9046,7 +9046,7 @@ IL_00c4_1:
 				int32_t L_46 = L_45;
 				RuntimeObject* L_47 = Box(Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_il2cpp_TypeInfo_var, &L_46);
 				NullCheck(L_44);
-				VirtualActionInvoker1< RuntimeObject* >::Invoke(27, L_44, L_47);
+				VirtualActionInvoker1< RuntimeObject* >::Invoke(28, L_44, L_47);
 			}
 
 IL_00e2_1:

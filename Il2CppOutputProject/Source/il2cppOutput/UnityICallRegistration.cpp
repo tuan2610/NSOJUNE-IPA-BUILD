@@ -114,10 +114,6 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_AudioSource_Pause();
 		Register_UnityEngine_AudioSource_Pause();
 
-		//System.Void UnityEngine.AudioSource::PlayHelper(UnityEngine.AudioSource,System.UInt64)
-		void Register_UnityEngine_AudioSource_PlayHelper();
-		Register_UnityEngine_AudioSource_PlayHelper();
-
 		//System.Void UnityEngine.AudioSource::PlayOneShotHelper(UnityEngine.AudioSource,UnityEngine.AudioClip,System.Single)
 		void Register_UnityEngine_AudioSource_PlayOneShotHelper();
 		Register_UnityEngine_AudioSource_PlayOneShotHelper();
@@ -125,14 +121,6 @@ void RegisterAllStrippedInternalCalls()
 		//System.Void UnityEngine.AudioSource::Stop(System.Boolean)
 		void Register_UnityEngine_AudioSource_Stop();
 		Register_UnityEngine_AudioSource_Stop();
-
-		//System.Void UnityEngine.AudioSource::set_clip(UnityEngine.AudioClip)
-		void Register_UnityEngine_AudioSource_set_clip();
-		Register_UnityEngine_AudioSource_set_clip();
-
-		//System.Void UnityEngine.AudioSource::set_loop(System.Boolean)
-		void Register_UnityEngine_AudioSource_set_loop();
-		Register_UnityEngine_AudioSource_set_loop();
 
 		//System.Void UnityEngine.AudioSource::set_volume(System.Single)
 		void Register_UnityEngine_AudioSource_set_volume();

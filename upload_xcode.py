@@ -377,6 +377,18 @@ def ensure_repo(git: str, root: Path, repo_url: str, branch: str) -> None:
     if current_branch != branch:
         run([git, "branch", "-M", branch], root)
 
+def sync_remote_base(git: str, root: Path, branch: str) -> None:
+    """Use origin/branch as the commit base while keeping current exported files."""
+    fetch = run([git, "fetch", "origin", branch], root, check=False)
+    if fetch.returncode != 0:
+        print("\nKhong fetch duoc origin/main. Co the repo moi hoac mang dang loi.")
+        print("Script se tiep tuc voi lich su local hien tai.")
+        return
+
+    remote_ref = f"origin/{branch}"
+    print(f"\nDong bo nen commit theo {remote_ref}, giu nguyen file export hien tai.")
+    run([git, "reset", "--mixed", remote_ref], root)
+
 
 def has_staged_changes(git: str, root: Path) -> bool:
     result = subprocess.run([git, "diff", "--cached", "--quiet"], cwd=str(root))
@@ -415,6 +427,7 @@ def main() -> int:
         ensure_helper_files(root)
 
     ensure_repo(git, root, args.repo, args.branch)
+    sync_remote_base(git, root, args.branch)
 
     run([git, "add", "-A"], root)
 

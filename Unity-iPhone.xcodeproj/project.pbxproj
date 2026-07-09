@@ -509,6 +509,7 @@
 		97974A07FD22274C0B6D9634 /* Assembly-CSharp__281.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__281.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__281.cpp"; sourceTree = SOURCE_ROOT; };
 		996AF65B21117545805EDE7A /* UnityEngine.UnityWebRequestModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UnityWebRequestModule.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UnityWebRequestModule.cpp; sourceTree = SOURCE_ROOT; };
 		996B8B35A5892AE2820D8033 /* Il2CppTypeDefinitions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = Il2CppTypeDefinitions.c; path = Il2CppOutputProject/Source/il2cppOutput/Il2CppTypeDefinitions.c; sourceTree = SOURCE_ROOT; };
+		99B2CFD2FC6429E59C0CFA36 /* Assembly-CSharp__290.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__290.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__290.cpp"; sourceTree = SOURCE_ROOT; };
 		9B2701DD9672B995DF08605C /* Assembly-CSharp__119.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__119.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__119.cpp"; sourceTree = SOURCE_ROOT; };
 		9C5F4A52C023FBEBCB9B9C51 /* Assembly-CSharp__11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__11.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__11.cpp"; sourceTree = SOURCE_ROOT; };
 		9CE38A0EB9BA95FB48A7537E /* UnityEngine.TextRenderingModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.TextRenderingModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.TextRenderingModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
@@ -1046,6 +1047,7 @@
 				4AC4B888B5CEACD878F1BC87 /* Assembly-CSharp__288.cpp */,
 				6287D41F8E254DCF0284D553 /* Assembly-CSharp__289.cpp */,
 				625C59B7F72E20CA1DAD37D1 /* Assembly-CSharp__29.cpp */,
+				99B2CFD2FC6429E59C0CFA36 /* Assembly-CSharp__290.cpp */,
 				3BF0F548641EA67234EF4822 /* Assembly-CSharp__3.cpp */,
 				F103AF1CC7D2D96E788D51D7 /* Assembly-CSharp__30.cpp */,
 				91B3C31E164148A3C3C440BA /* Assembly-CSharp__31.cpp */,
