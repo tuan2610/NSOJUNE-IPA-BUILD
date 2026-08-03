@@ -4129,6 +4129,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Locale_GetText_m7BA18BC14D3028C4C47
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OverflowException__ctor_m2B99D79236B7B87C0BB6C9AB2E557DECE481C264 (OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIntPtr__ctor_m8AD80E1EF069A66D0E48BF7765C91088B5C09419 (uintptr_t* __this, uint64_t ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIntPtr__ctor_m5915109E3F198CA16FDFA9CF438FAAEBFB90DE27 (uintptr_t* __this, uint32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UIntPtr__ctor_m8FD36BD3C315E2608A9570159B5668D33CA9C896_inline (uintptr_t* __this, void* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UIntPtr_Equals_m7A952F9624311E28A8F6B7D48A27E897F59E7021 (uintptr_t* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UIntPtr_GetHashCode_mC4A4145D2235757DC7209CAE775528FCBE7A4547 (uintptr_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_mD3AAE57EA18A6779F5A17E4F91C900A231EB0A6F (uint64_t* __this, const RuntimeMethod* method) ;
@@ -5292,6 +5293,21 @@ IL2CPP_EXTERN_C  void UIntPtr__ctor_m5915109E3F198CA16FDFA9CF438FAAEBFB90DE27_Ad
 	int32_t _offset = 1;
 	_thisAdjusted = reinterpret_cast<uintptr_t*>(__this + _offset);
 	UIntPtr__ctor_m5915109E3F198CA16FDFA9CF438FAAEBFB90DE27(_thisAdjusted, ___0_value, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIntPtr__ctor_m8FD36BD3C315E2608A9570159B5668D33CA9C896 (uintptr_t* __this, void* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		void* L_0 = ___0_value;
+		*__this = ((uintptr_t)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void UIntPtr__ctor_m8FD36BD3C315E2608A9570159B5668D33CA9C896_AdjustorThunk (RuntimeObject* __this, void* ___0_value, const RuntimeMethod* method)
+{
+	uintptr_t* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<uintptr_t*>(__this + _offset);
+	UIntPtr__ctor_m8FD36BD3C315E2608A9570159B5668D33CA9C896_inline(_thisAdjusted, ___0_value, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UIntPtr_Equals_m7A952F9624311E28A8F6B7D48A27E897F59E7021 (uintptr_t* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) 
 {
@@ -38038,6 +38054,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Task__cctor_mA2D3ADA7DF7A95FFA661AE218E7
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UIntPtr__ctor_m8FD36BD3C315E2608A9570159B5668D33CA9C896_inline (uintptr_t* __this, void* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		void* L_0 = ___0_value;
+		*__this = ((uintptr_t)L_0);
+		return;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR uint32_t Decimal_get_High_m86BC909DA3D43FC917C408DCACE5FFB0D73DB4DC_inline (Decimal_tDA6C877282B2D789CF97C0949661CC11D643969F* __this, const RuntimeMethod* method) 
 {
 	{

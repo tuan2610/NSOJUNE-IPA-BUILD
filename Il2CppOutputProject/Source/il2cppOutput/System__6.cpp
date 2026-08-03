@@ -8792,11 +8792,11 @@ IL_0036:
 		NullCheck(L_24);
 		int32_t L_25 = V_4;
 		NullCheck(L_22);
-		VirtualActionInvoker2< int32_t, int32_t >::Invoke(39, L_22, L_23, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_24)->max_length)), L_25)));
+		VirtualActionInvoker2< int32_t, int32_t >::Invoke(41, L_22, L_23, ((int32_t)il2cpp_codegen_subtract(((int32_t)(((RuntimeArray*)L_24)->max_length)), L_25)));
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_26 = V_3;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_27 = V_2;
 		NullCheck(L_26);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(26, L_26, (RuntimeObject*)L_27);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(28, L_26, (RuntimeObject*)L_27);
 		goto IL_0074;
 	}
 
@@ -8805,7 +8805,7 @@ IL_006d:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_28 = V_3;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_29 = V_2;
 		NullCheck(L_28);
-		VirtualActionInvoker1< RuntimeObject* >::Invoke(26, L_28, (RuntimeObject*)L_29);
+		VirtualActionInvoker1< RuntimeObject* >::Invoke(28, L_28, (RuntimeObject*)L_29);
 	}
 
 IL_0074:
@@ -8835,13 +8835,13 @@ IL_007a:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_34 = V_3;
 		NullCheck(L_34);
 		int32_t L_35;
-		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_34);
+		L_35 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_34);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_36 = (StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248*)SZArrayNew(StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248_il2cpp_TypeInfo_var, (uint32_t)L_35);
 		V_5 = L_36;
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_37 = V_3;
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_38 = V_5;
 		NullCheck(L_37);
-		VirtualActionInvoker1< RuntimeArray* >::Invoke(30, L_37, (RuntimeArray*)L_38);
+		VirtualActionInvoker1< RuntimeArray* >::Invoke(32, L_37, (RuntimeArray*)L_38);
 		StringU5BU5D_t7674CD946EC0CE7B3AE0BE70E6EE85F2ECD9F248* L_39 = V_5;
 		return L_39;
 	}
@@ -10266,7 +10266,7 @@ IL_003a:
 		int32_t L_11 = V_5;
 		NullCheck(L_10);
 		RuntimeObject* L_12;
-		L_12 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(23, L_10, L_11);
+		L_12 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25, L_10, L_11);
 		V_1 = ((WebRequestPrefixElement_tBE0FDE8DE0352095DECA0964655D25E05E435C35*)CastclassClass((RuntimeObject*)L_12, WebRequestPrefixElement_tBE0FDE8DE0352095DECA0964655D25E05E435C35_il2cpp_TypeInfo_var));
 		int32_t L_13 = V_3;
 		WebRequestPrefixElement_tBE0FDE8DE0352095DECA0964655D25E05E435C35* L_14 = V_1;
@@ -10315,7 +10315,7 @@ IL_007d:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_26 = V_4;
 		NullCheck(L_26);
 		int32_t L_27;
-		L_27 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_26);
+		L_27 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_26);
 		if ((((int32_t)L_25) < ((int32_t)L_27)))
 		{
 			goto IL_003a;
@@ -10542,14 +10542,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782
 		WebRequestPrefixElement__ctor_mA9BEF8159EE6A6C7092797F6E7BE68FDE06E3C4B(L_4, _stringLiteral58B716FF5428F7961E1403E6D969E605D0F27EAF, L_3, NULL);
 		NullCheck(L_2);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_2, L_4);
+		L_5 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_2, L_4);
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_6 = L_2;
 		RuntimeObject* L_7 = V_0;
 		WebRequestPrefixElement_tBE0FDE8DE0352095DECA0964655D25E05E435C35* L_8 = (WebRequestPrefixElement_tBE0FDE8DE0352095DECA0964655D25E05E435C35*)il2cpp_codegen_object_new(WebRequestPrefixElement_tBE0FDE8DE0352095DECA0964655D25E05E435C35_il2cpp_TypeInfo_var);
 		WebRequestPrefixElement__ctor_mA9BEF8159EE6A6C7092797F6E7BE68FDE06E3C4B(L_8, _stringLiteralF27E4C631EBEFA337EC21BE8552E169C9DED78A2, L_7, NULL);
 		NullCheck(L_6);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_6, L_8);
+		L_9 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_6, L_8);
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_10 = L_6;
 		FileWebRequestCreator_tC059E97F3753B58929F60C8531EADB9683F4111D* L_11 = (FileWebRequestCreator_tC059E97F3753B58929F60C8531EADB9683F4111D*)il2cpp_codegen_object_new(FileWebRequestCreator_tC059E97F3753B58929F60C8531EADB9683F4111D_il2cpp_TypeInfo_var);
 		FileWebRequestCreator__ctor_mDF264D86311EA60A56DA2B1FCE048E48F0BF6CAB(L_11, NULL);
@@ -10557,7 +10557,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782
 		WebRequestPrefixElement__ctor_mA9BEF8159EE6A6C7092797F6E7BE68FDE06E3C4B(L_12, _stringLiteralC05DD95A56B355AAD74E9CE147B236E03FF8905E, L_11, NULL);
 		NullCheck(L_10);
 		int32_t L_13;
-		L_13 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_10, L_12);
+		L_13 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_10, L_12);
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_14 = L_10;
 		FtpWebRequestCreator_tC389DCEC82487414E888BDCCE1922A5A10937620* L_15 = (FtpWebRequestCreator_tC389DCEC82487414E888BDCCE1922A5A10937620*)il2cpp_codegen_object_new(FtpWebRequestCreator_tC389DCEC82487414E888BDCCE1922A5A10937620_il2cpp_TypeInfo_var);
 		FtpWebRequestCreator__ctor_m163216FA7A2018F0D581EC6AC6B83FB853DA514D(L_15, NULL);
@@ -10565,7 +10565,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782
 		WebRequestPrefixElement__ctor_mA9BEF8159EE6A6C7092797F6E7BE68FDE06E3C4B(L_16, _stringLiteral8CB5CAE4A06CBA4A72564C688228877DD24B9906, L_15, NULL);
 		NullCheck(L_14);
 		int32_t L_17;
-		L_17 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_14, L_16);
+		L_17 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_14, L_16);
 		return L_14;
 	}
 }
@@ -19933,7 +19933,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Cookie_tEF33ED5B8CFD858C3338D220C2980BD50F6AD
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_2 = __this->___m_list;
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_2);
 		if ((((int32_t)L_1) < ((int32_t)L_3)))
 		{
 			goto IL_001d;
@@ -19953,7 +19953,7 @@ IL_001d:
 		int32_t L_6 = ___0_index;
 		NullCheck(L_5);
 		RuntimeObject* L_7;
-		L_7 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(23, L_5, L_6);
+		L_7 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25, L_5, L_6);
 		return ((Cookie_tEF33ED5B8CFD858C3338D220C2980BD50F6ADBC3*)CastclassSealed((RuntimeObject*)L_7, Cookie_tEF33ED5B8CFD858C3338D220C2980BD50F6ADBC3_il2cpp_TypeInfo_var));
 	}
 }
@@ -19992,7 +19992,7 @@ IL_000e:
 		Cookie_tEF33ED5B8CFD858C3338D220C2980BD50F6ADBC3* L_7 = ___0_cookie;
 		NullCheck(L_6);
 		int32_t L_8;
-		L_8 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_6, L_7);
+		L_8 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_6, L_7);
 		return;
 	}
 
@@ -20002,7 +20002,7 @@ IL_0036:
 		int32_t L_10 = V_0;
 		Cookie_tEF33ED5B8CFD858C3338D220C2980BD50F6ADBC3* L_11 = ___0_cookie;
 		NullCheck(L_9);
-		VirtualActionInvoker2< int32_t, RuntimeObject* >::Invoke(24, L_9, L_10, L_11);
+		VirtualActionInvoker2< int32_t, RuntimeObject* >::Invoke(26, L_9, L_10, L_11);
 		return;
 	}
 }
@@ -20116,7 +20116,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CookieCollection_get_Count_m1D34E6D26
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_0 = __this->___m_list;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_0);
 		return L_1;
 	}
 }
@@ -20133,7 +20133,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CookieCollection_CopyTo_mF009D844981C817
 		RuntimeArray* L_1 = ___0_array;
 		int32_t L_2 = ___1_index;
 		NullCheck(L_0);
-		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(31, L_0, L_1, L_2);
+		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(33, L_0, L_1, L_2);
 		return;
 	}
 }
@@ -20242,7 +20242,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CookieCollection_InternalAdd_mF1BF5B5
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_2 = __this->___m_list;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(33, L_2);
+		L_3 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(35, L_2);
 		V_3 = L_3;
 	}
 	{
@@ -20316,7 +20316,7 @@ IL_001e_1:
 				int32_t L_18 = V_2;
 				Cookie_tEF33ED5B8CFD858C3338D220C2980BD50F6ADBC3* L_19 = ___0_cookie;
 				NullCheck(L_17);
-				VirtualActionInvoker2< int32_t, RuntimeObject* >::Invoke(24, L_17, L_18, L_19);
+				VirtualActionInvoker2< int32_t, RuntimeObject* >::Invoke(26, L_17, L_18, L_19);
 				goto IL_0078;
 			}
 
@@ -20355,7 +20355,7 @@ IL_0078:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_24 = __this->___m_list;
 		NullCheck(L_24);
 		int32_t L_25;
-		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_24);
+		L_25 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_24);
 		if ((!(((uint32_t)L_23) == ((uint32_t)L_25))))
 		{
 			goto IL_00a2;
@@ -20366,7 +20366,7 @@ IL_0078:
 		Cookie_tEF33ED5B8CFD858C3338D220C2980BD50F6ADBC3* L_27 = ___0_cookie;
 		NullCheck(L_26);
 		int32_t L_28;
-		L_28 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_26, L_27);
+		L_28 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_26, L_27);
 		goto IL_00a2;
 	}
 
@@ -20376,7 +20376,7 @@ IL_0095:
 		Cookie_tEF33ED5B8CFD858C3338D220C2980BD50F6ADBC3* L_30 = ___0_cookie;
 		NullCheck(L_29);
 		int32_t L_31;
-		L_31 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_29, L_30);
+		L_31 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_29, L_30);
 	}
 
 IL_00a2:
@@ -20426,7 +20426,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t CookieCollection_IndexOf_m3B060681C5B
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_1 = __this->___m_list;
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(33, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(35, L_1);
 		V_2 = L_2;
 	}
 	{
@@ -20530,7 +20530,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CookieCollection_RemoveAt_mB59F81B489A13
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_0 = __this->___m_list;
 		int32_t L_1 = ___0_idx;
 		NullCheck(L_0);
-		VirtualActionInvoker1< int32_t >::Invoke(38, L_0, L_1);
+		VirtualActionInvoker1< int32_t >::Invoke(40, L_0, L_1);
 		return;
 	}
 }
@@ -26858,7 +26858,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebProxy_UpdateRegExList_m7B2EE98DAADC48
 			ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_2 = V_1;
 			NullCheck(L_2);
 			int32_t L_3;
-			L_3 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_2);
+			L_3 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_2);
 			if ((((int32_t)L_3) <= ((int32_t)0)))
 			{
 				goto IL_004b_1;
@@ -26868,7 +26868,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WebProxy_UpdateRegExList_m7B2EE98DAADC48
 			ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_4 = V_1;
 			NullCheck(L_4);
 			int32_t L_5;
-			L_5 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_4);
+			L_5 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_4);
 			RegexU5BU5D_t0CD81C6C88D55013C8DCC10E24EC650E6B589CD0* L_6 = (RegexU5BU5D_t0CD81C6C88D55013C8DCC10E24EC650E6B589CD0*)(RegexU5BU5D_t0CD81C6C88D55013C8DCC10E24EC650E6B589CD0*)SZArrayNew(RegexU5BU5D_t0CD81C6C88D55013C8DCC10E24EC650E6B589CD0_il2cpp_TypeInfo_var, (uint32_t)L_5);
 			V_0 = L_6;
 			V_2 = 0;
@@ -26883,7 +26883,7 @@ IL_0025_1:
 			int32_t L_10 = V_2;
 			NullCheck(L_9);
 			RuntimeObject* L_11;
-			L_11 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(23, L_9, L_10);
+			L_11 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25, L_9, L_10);
 			Regex_tE773142C2BE45C5D362B0F815AFF831707A51772* L_12 = (Regex_tE773142C2BE45C5D362B0F815AFF831707A51772*)il2cpp_codegen_object_new(Regex_tE773142C2BE45C5D362B0F815AFF831707A51772_il2cpp_TypeInfo_var);
 			Regex__ctor_mE3996C71B04A4A6845745D01C93B1D27423D0621(L_12, ((String_t*)CastclassSealed((RuntimeObject*)L_11, String_t_il2cpp_TypeInfo_var)), ((int32_t)513), NULL);
 			NullCheck(L_7);
@@ -26899,7 +26899,7 @@ IL_0042_1:
 			ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_15 = V_1;
 			NullCheck(L_15);
 			int32_t L_16;
-			L_16 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_15);
+			L_16 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_15);
 			if ((((int32_t)L_14) < ((int32_t)L_16)))
 			{
 				goto IL_0025_1;
@@ -27082,7 +27082,7 @@ IL_0069:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_20 = __this->____BypassList;
 		NullCheck(L_20);
 		int32_t L_21;
-		L_21 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_20);
+		L_21 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_20);
 		if ((((int32_t)L_19) < ((int32_t)L_21)))
 		{
 			goto IL_0053;

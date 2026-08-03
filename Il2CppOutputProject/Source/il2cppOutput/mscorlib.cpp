@@ -1465,12 +1465,14 @@ struct StringReader_t1A336148FF22A9584E759A9D720CC96C23E35DD8  : public TextRead
 };
 struct TextInfo_tD3BAFCFD77418851E7D5CB8D2588F47019E414B4  : public RuntimeObject
 {
+	String_t* ___m_listSeparator;
 	bool ___m_isReadOnly;
 	String_t* ___m_cultureName;
 	CultureData_tEEFDCF4ECA1BBF6C0C8C94EB3541657245598F9D* ___m_cultureData;
 	String_t* ___m_textInfoName;
 	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ___m_IsAsciiCasingSameAsInvariant;
 	String_t* ___customCultureName;
+	int32_t ___m_nDataItem;
 	bool ___m_useUserOverride;
 	int32_t ___m_win32LangID;
 };
@@ -21127,7 +21129,7 @@ IL_000a:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_1 = __this->___elist;
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_1);
 		return L_2;
 	}
 }
@@ -21195,7 +21197,7 @@ IL_0016:
 		ASN1_t9135FB110BC2CC4AB35FB6204FFF2B2D8245E4B4* L_4 = ___0_asn1;
 		NullCheck(L_3);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_3, L_4);
+		L_5 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_3, L_4);
 	}
 
 IL_0023:
@@ -21245,7 +21247,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A8261
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_2 = __this->___elist;
 		NullCheck(L_2);
 		RuntimeObject* L_3;
-		L_3 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(33, L_2);
+		L_3 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(35, L_2);
 		V_6 = L_3;
 	}
 	{
@@ -21295,7 +21297,7 @@ IL_0026_1:
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_11 = V_7;
 				NullCheck(L_10);
 				int32_t L_12;
-				L_12 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(25, L_10, (RuntimeObject*)L_11);
+				L_12 = VirtualFuncInvoker1< int32_t, RuntimeObject* >::Invoke(27, L_10, (RuntimeObject*)L_11);
 				int32_t L_13 = V_3;
 				ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_14 = V_7;
 				NullCheck(L_14);
@@ -21339,7 +21341,7 @@ IL_0079:
 		int32_t L_20 = V_9;
 		NullCheck(L_19);
 		RuntimeObject* L_21;
-		L_21 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(23, L_19, L_20);
+		L_21 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25, L_19, L_20);
 		V_10 = ((ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*)Castclass((RuntimeObject*)L_21, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031_il2cpp_TypeInfo_var));
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_22 = V_10;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_23 = V_0;
@@ -21361,7 +21363,7 @@ IL_00a7:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_30 = __this->___elist;
 		NullCheck(L_30);
 		int32_t L_31;
-		L_31 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_30);
+		L_31 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_30);
 		if ((((int32_t)L_29) < ((int32_t)L_31)))
 		{
 			goto IL_0079;
@@ -23560,7 +23562,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyPairPersistence_FromXml_m6D94C0820F4E
 		L_10 = SecurityElement_get_Children_m59EB3995745C9F4A2AFFC7F8528E153706C16C8D_inline(L_9, NULL);
 		NullCheck(L_10);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_10);
+		L_11 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_10);
 		if ((((int32_t)L_11) <= ((int32_t)0)))
 		{
 			goto IL_0055;
@@ -23573,7 +23575,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void KeyPairPersistence_FromXml_m6D94C0820F4E
 		L_13 = SecurityElement_get_Children_m59EB3995745C9F4A2AFFC7F8528E153706C16C8D_inline(L_12, NULL);
 		NullCheck(L_13);
 		RuntimeObject* L_14;
-		L_14 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(23, L_13, 0);
+		L_14 = VirtualFuncInvoker1< RuntimeObject*, int32_t >::Invoke(25, L_13, 0);
 		NullCheck(L_14);
 		String_t* L_15;
 		L_15 = VirtualFuncInvoker0< String_t* >::Invoke(3, L_14);

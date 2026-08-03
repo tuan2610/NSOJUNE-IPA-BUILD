@@ -7,6 +7,6 @@ extern "C" void UnityEnableStylusTouch(bool value);
 void RegisterFeatures()
 {
     UnityEnableGyroscope(false);
-    UnityEnableStylusTouch(false);
+    UnityEnableStylusTouch(true);
 }
 

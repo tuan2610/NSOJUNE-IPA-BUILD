@@ -334,6 +334,7 @@ struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129;
 struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F;
 struct Assembly_t;
 struct AssemblyCompanyAttribute_tB1E99BD8AACD8D0DFD028C96C4B2E4337FAD4673;
+struct AssemblyConfigurationAttribute_t0A68EE0AE862DBFB409961D6DD94BCA8CFE2D95B;
 struct AssemblyCopyrightAttribute_tE509AB280F1465293563388BA462EADB223C062E;
 struct AssemblyDefaultAliasAttribute_tABCE8261C3B98B7EC1327AB5AC5B381719ED930D;
 struct AssemblyDelaySignAttribute_tF1B079F333B73E0AFA7B00DBCE0AE8265180F43E;
@@ -344,6 +345,7 @@ struct AssemblyKeyFileAttribute_tB0EC930762855DB7BE70FEE34F70977A7D238DD1;
 struct AssemblyName_t555F1570F523D87D970C6E7F27B1B44C83EADDD2;
 struct AssemblyProductAttribute_t7612F95ED37D3566B8B89A062375A09ABC00CD6A;
 struct AssemblyTitleAttribute_tD662898804D6F2837455D81BA60B9F75C67636F1;
+struct AssemblyTrademarkAttribute_tFD7599C8542FAD4B472C20F8DBA514DF1A163BE3;
 struct AsyncMethodBuilderAttribute_t6B43FAAB8FD9E2B55C394CFEAF3EEEC453C72BAB;
 struct AsyncMethodBuilderCore_tD5ABB3A2536319A3345B32A5481E37E23DD8CEDF;
 struct AsyncStateMachineAttribute_tB4999E4DFF510AEB79A44F5D977522F2EA64F0C4;
@@ -1570,6 +1572,10 @@ struct AssemblyCompanyAttribute_tB1E99BD8AACD8D0DFD028C96C4B2E4337FAD4673  : pub
 {
 	String_t* ___U3CCompanyU3Ek__BackingField;
 };
+struct AssemblyConfigurationAttribute_t0A68EE0AE862DBFB409961D6DD94BCA8CFE2D95B  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+{
+	String_t* ___U3CConfigurationU3Ek__BackingField;
+};
 struct AssemblyCopyrightAttribute_tE509AB280F1465293563388BA462EADB223C062E  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 	String_t* ___U3CCopyrightU3Ek__BackingField;
@@ -1605,6 +1611,10 @@ struct AssemblyProductAttribute_t7612F95ED37D3566B8B89A062375A09ABC00CD6A  : pub
 struct AssemblyTitleAttribute_tD662898804D6F2837455D81BA60B9F75C67636F1  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
 	String_t* ___U3CTitleU3Ek__BackingField;
+};
+struct AssemblyTrademarkAttribute_tFD7599C8542FAD4B472C20F8DBA514DF1A163BE3  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
+{
+	String_t* ___U3CTrademarkU3Ek__BackingField;
 };
 struct AsyncMethodBuilderAttribute_t6B43FAAB8FD9E2B55C394CFEAF3EEEC453C72BAB  : public Attribute_tFDA8EFEFB0711976D22474794576DAF28F7440AA
 {
@@ -25917,6 +25927,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyCompanyAttribute__ctor_m5FAB94A5
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyConfigurationAttribute__ctor_mA81BF242FD2647374B36EEF689F5586B112FBD13 (AssemblyConfigurationAttribute_t0A68EE0AE862DBFB409961D6DD94BCA8CFE2D95B* __this, String_t* ___0_configuration, const RuntimeMethod* method) 
+{
+	{
+		Attribute__ctor_m79ED1BF1EE36D1E417BA89A0D9F91F8AAD8D19E2(__this, NULL);
+		String_t* L_0 = ___0_configuration;
+		__this->___U3CConfigurationU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CConfigurationU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -26097,6 +26125,24 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTitleAttribute__ctor_mC70597EA25
 		String_t* L_0 = ___0_title;
 		__this->___U3CTitleU3Ek__BackingField = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTitleU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AssemblyTrademarkAttribute__ctor_m3383FB67CA60DD87988D0F38DC8779794543FD90 (AssemblyTrademarkAttribute_tFD7599C8542FAD4B472C20F8DBA514DF1A163BE3* __this, String_t* ___0_trademark, const RuntimeMethod* method) 
+{
+	{
+		Attribute__ctor_m79ED1BF1EE36D1E417BA89A0D9F91F8AAD8D19E2(__this, NULL);
+		String_t* L_0 = ___0_trademark;
+		__this->___U3CTrademarkU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CTrademarkU3Ek__BackingField), (void*)L_0);
 		return;
 	}
 }
@@ -28349,7 +28395,7 @@ IL_0010:
 		bool L_9 = ___2_serialization;
 		NullCheck(L_8);
 		String_t* L_10;
-		L_10 = VirtualFuncInvoker1< String_t*, bool >::Invoke(117, L_8, L_9);
+		L_10 = VirtualFuncInvoker1< String_t*, bool >::Invoke(120, L_8, L_9);
 		V_3 = L_10;
 		NullCheck(L_8);
 		bool L_11;

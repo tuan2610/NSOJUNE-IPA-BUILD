@@ -4862,7 +4862,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Evidence_get_Count_m4AC2DD808834C7B48
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_2 = __this->___hostEvidenceList;
 		NullCheck(L_2);
 		int32_t L_3;
-		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_2);
+		L_3 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_2);
 		V_0 = ((int32_t)il2cpp_codegen_add(L_1, L_3));
 	}
 
@@ -4879,7 +4879,7 @@ IL_0018:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_6 = __this->___assemblyEvidenceList;
 		NullCheck(L_6);
 		int32_t L_7;
-		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_6);
+		L_7 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_6);
 		V_0 = ((int32_t)il2cpp_codegen_add(L_5, L_7));
 	}
 
@@ -4910,7 +4910,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Evidence_CopyTo_m004C861D5368443EAEB215C
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_1 = __this->___hostEvidenceList;
 		NullCheck(L_1);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_1);
+		L_2 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_1);
 		V_0 = L_2;
 		int32_t L_3 = V_0;
 		if ((((int32_t)L_3) <= ((int32_t)0)))
@@ -4923,7 +4923,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Evidence_CopyTo_m004C861D5368443EAEB215C
 		RuntimeArray* L_5 = ___0_array;
 		int32_t L_6 = ___1_index;
 		NullCheck(L_4);
-		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(31, L_4, L_5, L_6);
+		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(33, L_4, L_5, L_6);
 	}
 
 IL_0027:
@@ -4938,7 +4938,7 @@ IL_0027:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_8 = __this->___assemblyEvidenceList;
 		NullCheck(L_8);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(20, L_8);
+		L_9 = VirtualFuncInvoker0< int32_t >::Invoke(21, L_8);
 		if ((((int32_t)L_9) <= ((int32_t)0)))
 		{
 			goto IL_004c;
@@ -4950,7 +4950,7 @@ IL_0027:
 		int32_t L_12 = ___1_index;
 		int32_t L_13 = V_0;
 		NullCheck(L_10);
-		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(31, L_10, L_11, ((int32_t)il2cpp_codegen_add(L_12, L_13)));
+		VirtualActionInvoker2< RuntimeArray*, int32_t >::Invoke(33, L_10, L_11, ((int32_t)il2cpp_codegen_add(L_12, L_13)));
 	}
 
 IL_004c:
@@ -4980,7 +4980,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Evidence_GetEnumerator_mCA624B
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_1 = __this->___hostEvidenceList;
 		NullCheck(L_1);
 		RuntimeObject* L_2;
-		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(33, L_1);
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(35, L_1);
 		V_0 = L_2;
 	}
 
@@ -4997,7 +4997,7 @@ IL_0016:
 		ArrayList_t7A8E5AF0C4378015B5731ABE2BED8F2782FEEF8A* L_4 = __this->___assemblyEvidenceList;
 		NullCheck(L_4);
 		RuntimeObject* L_5;
-		L_5 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(33, L_4);
+		L_5 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(35, L_4);
 		V_1 = L_5;
 	}
 
