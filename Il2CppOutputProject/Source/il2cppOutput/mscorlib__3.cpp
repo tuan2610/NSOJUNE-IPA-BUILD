@@ -1922,6 +1922,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D DateTime_ToLocalTime_mD87626169251A26AF699DAE90A1C31190AD30B94 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTimeFormat_Format_m8F8FA6A9F8BD8EDCC502540B4CF79EF7A43FF7F4 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___0_dateTime, String_t* ___1_format, RuntimeObject* ___2_provider, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m447C83E1F8FFFFF4D20C0F7D5C18DEB160F9833A (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m6963A84785C320DA776C9FCFFEDAF26C8F1A8D78 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, String_t* ___0_format, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m66457C11C42C07E2F437A9D899E6E3FB9FD77B50 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, RuntimeObject* ___0_provider, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m27637E1131A10BED8A95639D64339023D5EBBF00 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, String_t* ___0_format, RuntimeObject* ___1_provider, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DateTimeFormat_TryFormat_m0CEC09DC521B9D2CE450DB7124389D52BDC62857 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___0_dateTime, Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D ___1_destination, int32_t* ___2_charsWritten, ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___3_format, RuntimeObject* ___4_provider, const RuntimeMethod* method) ;
@@ -1974,6 +1975,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SerializationInfo_GetValue_mE6091C2E906E113455D05E734C86F43B8E1D1034 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, String_t* ___0_name, Type_t* ___1_type, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTimeOffset__ctor_m3F044A6B1D54C1067C87CFF8C7B930D0F613041D (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t DateTimeOffset_GetHashCode_mD133F5089095D2C75A1B7C90D71D62D39F0D11CD (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t DateTimeOffset_ToUnixTimeSeconds_m91F88288451BAB5A8373467A94DAEA359AAF34BD (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t DateTimeOffset_ToUnixTimeMilliseconds_mDC0FF57434DBFAFC47B63F1119CAABE402F8CDEC (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTimeFormat_Format_mE29072D46A40E3F42E100A7F85452B42B8DC692B (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D ___0_dateTime, String_t* ___1_format, RuntimeObject* ___2_provider, TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A ___3_offset, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTimeOffset_ToString_m6179A30F1E22CDF5F9340DFE115E923C18BC13F9 (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, const RuntimeMethod* method) ;
@@ -5542,6 +5544,32 @@ IL2CPP_EXTERN_C  String_t* DateTime_ToString_m447C83E1F8FFFFF4D20C0F7D5C18DEB160
 	_returnValue = DateTime_ToString_m447C83E1F8FFFFF4D20C0F7D5C18DEB160F9833A(_thisAdjusted, method);
 	return _returnValue;
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m6963A84785C320DA776C9FCFFEDAF26C8F1A8D78 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, String_t* ___0_format, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTimeFormat_tE5F9F8059A3910CA0E37935312AAEDC297D907A2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0 = (*(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D*)__this);
+		String_t* L_1 = ___0_format;
+		il2cpp_codegen_runtime_class_init_inline(DateTimeFormat_tE5F9F8059A3910CA0E37935312AAEDC297D907A2_il2cpp_TypeInfo_var);
+		String_t* L_2;
+		L_2 = DateTimeFormat_Format_m8F8FA6A9F8BD8EDCC502540B4CF79EF7A43FF7F4(L_0, L_1, (RuntimeObject*)NULL, NULL);
+		return L_2;
+	}
+}
+IL2CPP_EXTERN_C  String_t* DateTime_ToString_m6963A84785C320DA776C9FCFFEDAF26C8F1A8D78_AdjustorThunk (RuntimeObject* __this, String_t* ___0_format, const RuntimeMethod* method)
+{
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D*>(__this + _offset);
+	String_t* _returnValue;
+	_returnValue = DateTime_ToString_m6963A84785C320DA776C9FCFFEDAF26C8F1A8D78(_thisAdjusted, ___0_format, method);
+	return _returnValue;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* DateTime_ToString_m66457C11C42C07E2F437A9D899E6E3FB9FD77B50 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, RuntimeObject* ___0_provider, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -7270,6 +7298,37 @@ IL2CPP_EXTERN_C  int32_t DateTimeOffset_GetHashCode_mD133F5089095D2C75A1B7C90D71
 	_thisAdjusted = reinterpret_cast<DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4*>(__this + _offset);
 	int32_t _returnValue;
 	_returnValue = DateTimeOffset_GetHashCode_mD133F5089095D2C75A1B7C90D71D62D39F0D11CD(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t DateTimeOffset_ToUnixTimeSeconds_m91F88288451BAB5A8373467A94DAEA359AAF34BD (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_runtime_class_init_inline(DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4_il2cpp_TypeInfo_var);
+		DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D L_0;
+		L_0 = DateTimeOffset_get_UtcDateTime_mE7EB39F361C89E1367CBC03C3410BA34F194DA40(__this, NULL);
+		V_0 = L_0;
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		int64_t L_1;
+		L_1 = DateTime_get_Ticks_mC2CF04ED0EAB425C72C2532FFC5743777F3C93A6((&V_0), NULL);
+		return ((int64_t)il2cpp_codegen_subtract(((int64_t)(L_1/((int64_t)((int32_t)10000000)))), ((int64_t)62135596800LL)));
+	}
+}
+IL2CPP_EXTERN_C  int64_t DateTimeOffset_ToUnixTimeSeconds_m91F88288451BAB5A8373467A94DAEA359AAF34BD_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4*>(__this + _offset);
+	int64_t _returnValue;
+	_returnValue = DateTimeOffset_ToUnixTimeSeconds_m91F88288451BAB5A8373467A94DAEA359AAF34BD(_thisAdjusted, method);
 	return _returnValue;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t DateTimeOffset_ToUnixTimeMilliseconds_mDC0FF57434DBFAFC47B63F1119CAABE402F8CDEC (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, const RuntimeMethod* method) 

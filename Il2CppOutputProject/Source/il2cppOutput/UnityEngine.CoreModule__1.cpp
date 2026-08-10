@@ -5999,13 +5999,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Format_mA8DBB4C2516B9723C5A4
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PropertyName_ToString_mDE271855F7B9A516185A66E12D90FE6B6C9DF6C0 (PropertyName_tE4B4AAA58AF3BF2C0CD95509EB7B786F096901C2* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_RandomRangeInt_mB4B20C7368BBE6060007CB759C4C54B43BA29A37 (int32_t ___0_minInclusive, int32_t ___1_maxExclusive, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95* ResourcesAPI_get_overrideAPI_m2D010C9668878DA21ED92CADE587528848BB98E9_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* ResourcesAPIInternal_FindObjectsOfTypeAll_m7432D13EB6FC95F6C05070D6F215964B29E7E2C9 (Type_t* ___0_type, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ResourcesAPIInternal_FindShaderByName_mAD5ED1470F0DE9CE9A95145187281879AE61B56D (String_t* ___0_name, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ResourcesAPIInternal_Load_m80AAD6198709E0D3799797CA6D1F3995B1CA2EC2 (String_t* ___0_path, Type_t* ___1_systemTypeInstance, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* ResourcesAPIInternal_LoadAll_m38B2F3DE5492C328D8288D6DA44F677C852B8137 (String_t* ___0_path, Type_t* ___1_systemTypeInstance, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourcesAPI__ctor_m27A1A0B35DF74437840934A70F47DE1BAEAFECA0 (ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95* ResourcesAPI_get_ActiveAPI_mF850D558242EC69D97A42BCAEC2270D71F3250A4 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79A4D6DF2640692EE6D9987858C57 (RuntimeTypeHandle_t332A452B8B6179E4469B69525D0FE82A88030F7B ___0_handle, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Resources_Load_m6CD8FBBCCFFF22179FA0E7B1806B888103008D33 (String_t* ___0_path, Type_t* ___1_systemTypeInstance, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95* ResourcesAPI_get_ActiveAPI_mF850D558242EC69D97A42BCAEC2270D71F3250A4 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object_Finalize_mC98C96301CCABFE00F1A7EF8E15DF507CACD42B2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AsyncOperation_InternalDestroy_mDA1735EC05E6964108BC4C301D938735B2856767 (intptr_t ___0_ptr, const RuntimeMethod* method) ;
 inline void Action_1_Invoke_m1D35475B8639DAC98CB843FE398FE26FDA136D4C_inline (Action_1_tE8693FF0E67CDBA52BAFB211BFF1844D076ABAFB* __this, AsyncOperation_tD2789250E4B098DEDA92B366A577E500A92D2D3C* ___0_obj, const RuntimeMethod* method)
@@ -6359,6 +6360,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_realtimeSinceStartup_m73B3CB73
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float WaitForSecondsRealtime_get_waitTime_m385602BA6C66A6169695FE9AD78F2B24F4FF8573_inline (WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void CustomYieldInstruction__ctor_mB64531EC09E871EF60BFAC16918A774C977C7B50 (CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void WaitForSecondsRealtime_set_waitTime_m8317E2B7A2B2DC4E4A1B0CD0F9D4479294B51FB5_inline (WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01* __this, float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SystemInfo_GetOperatingSystem_m03DA0E31D9925BE604EC7841D7C3540D953F9720 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_GetOperatingSystemFamily_mE40096D3196E10CC8940F79B729CA985D1CD4396 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SystemInfo_GetDeviceUniqueIdentifier_mCAD41FC4C4F61D587D3752A2C1552F345953FBAF (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_GetCopyTextureSupport_m9132876802E255359141941F6EF7CBB8D9715ADE (const RuntimeMethod* method) ;
@@ -6377,7 +6379,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Application_get_platform_m59EF7D6155D
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool TouchScreenKeyboard_get_disableInPlaceEditing_m063C253E629D35E9C1DEC911EA785AA796D35252_inline (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TouchScreenKeyboard__ctor_mA0C6FA07182A13B8F3F62731B94CAAD83F340861 (TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A* __this, String_t* ___0_text, int32_t ___1_keyboardType, bool ___2_autocorrection, bool ___3_multiline, bool ___4_secure, bool ___5_alert, String_t* ___6_textPlaceholder, int32_t ___7_characterLimit, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A* TouchScreenKeyboard_Open_m2E1E3A71919EE30C51539DF8A037B74BE2D78065 (String_t* ___0_text, int32_t ___1_keyboardType, bool ___2_autocorrection, bool ___3_multiline, bool ___4_secure, bool ___5_alert, String_t* ___6_textPlaceholder, int32_t ___7_characterLimit, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TouchScreenKeyboard_GetDone_m5C6DF58F8D1FD6C08AA6CA79066A026FB95E64DA (intptr_t ___0_ptr, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TouchScreenKeyboard_GetSelection_mFE603E50B5D189F96A3E3D93FA5F70E7B2DA9C5A (int32_t* ___0_start, int32_t* ___1_length, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* TouchScreenKeyboard_get_text_m74593E81B017446204A9DB1F7359922A2C005B1E (TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_mE5B2755F0BEA043CACF915D5CE140859EE58FA66 (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* __this, String_t* ___0_paramName, String_t* ___1_message, const RuntimeMethod* method) ;
@@ -15103,6 +15104,15 @@ IL2CPP_EXTERN_C void ResourceRequest_tE6953FBA45EAAEFE866C635B9E7852044E62D868_m
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* ResourcesAPIInternal_FindObjectsOfTypeAll_m7432D13EB6FC95F6C05070D6F215964B29E7E2C9 (Type_t* ___0_type, const RuntimeMethod* method) 
+{
+	typedef ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* (*ResourcesAPIInternal_FindObjectsOfTypeAll_m7432D13EB6FC95F6C05070D6F215964B29E7E2C9_ftn) (Type_t*);
+	static ResourcesAPIInternal_FindObjectsOfTypeAll_m7432D13EB6FC95F6C05070D6F215964B29E7E2C9_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (ResourcesAPIInternal_FindObjectsOfTypeAll_m7432D13EB6FC95F6C05070D6F215964B29E7E2C9_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll(System.Type)");
+	ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* icallRetVal = _il2cpp_icall_func(___0_type);
+	return icallRetVal;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ResourcesAPIInternal_FindShaderByName_mAD5ED1470F0DE9CE9A95145187281879AE61B56D (String_t* ___0_name, const RuntimeMethod* method) 
 {
 	typedef Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* (*ResourcesAPIInternal_FindShaderByName_mAD5ED1470F0DE9CE9A95145187281879AE61B56D_ftn) (String_t*);
@@ -15192,6 +15202,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourcesAPI__ctor_m27A1A0B35DF744378409
 		return;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* ResourcesAPI_FindObjectsOfTypeAll_m02F485A521ABC95B7510FA3339D0672B46DCD990 (ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95* __this, Type_t* ___0_systemTypeInstance, const RuntimeMethod* method) 
+{
+	{
+		Type_t* L_0 = ___0_systemTypeInstance;
+		ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* L_1;
+		L_1 = ResourcesAPIInternal_FindObjectsOfTypeAll_m7432D13EB6FC95F6C05070D6F215964B29E7E2C9(L_0, NULL);
+		return L_1;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Shader_tADC867D36B7876EE22427FAA2CE485105F4EE692* ResourcesAPI_FindShaderByName_m9A6287AA24EC06DBF3B2630618015B5CB6F01315 (ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95* __this, String_t* ___0_name, const RuntimeMethod* method) 
 {
 	{
@@ -15245,6 +15264,33 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ResourcesAPI__cctor_m29BD424C62AF8562DC2
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* Resources_FindObjectsOfTypeAll_mECAB6322D6A605B60AF0598F6D81F169ACE74C00 (Type_t* ___0_type, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* V_0 = NULL;
+	{
+		il2cpp_codegen_runtime_class_init_inline(ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95_il2cpp_TypeInfo_var);
+		ResourcesAPI_tDD1769E5695358FB56E4E0FA44A9E25900662A95* L_0;
+		L_0 = ResourcesAPI_get_ActiveAPI_mF850D558242EC69D97A42BCAEC2270D71F3250A4(NULL);
+		Type_t* L_1 = ___0_type;
+		NullCheck(L_0);
+		ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* L_2;
+		L_2 = VirtualFuncInvoker1< ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A*, Type_t* >::Invoke(4, L_0, L_1);
+		V_0 = L_2;
+		goto IL_000f;
+	}
+
+IL_000f:
+	{
+		ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* L_3 = V_0;
+		return L_3;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* Resources_Load_mA66E7AA8D024B495158F157382C3A8528306FFEA (String_t* ___0_path, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -15290,7 +15336,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D971
 		Type_t* L_2 = ___1_systemTypeInstance;
 		NullCheck(L_0);
 		Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* L_3;
-		L_3 = VirtualFuncInvoker2< Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*, String_t*, Type_t* >::Invoke(5, L_0, L_1, L_2);
+		L_3 = VirtualFuncInvoker2< Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*, String_t*, Type_t* >::Invoke(6, L_0, L_1, L_2);
 		V_0 = L_3;
 		goto IL_0010;
 	}
@@ -15318,7 +15364,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF
 		Type_t* L_2 = ___1_systemTypeInstance;
 		NullCheck(L_0);
 		ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A* L_3;
-		L_3 = VirtualFuncInvoker2< ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A*, String_t*, Type_t* >::Invoke(6, L_0, L_1, L_2);
+		L_3 = VirtualFuncInvoker2< ObjectU5BU5D_tD4BF1BEC72A31DF6611C0B8FA3112AF128FC3F8A*, String_t*, Type_t* >::Invoke(7, L_0, L_1, L_2);
 		V_0 = L_3;
 		goto IL_0010;
 	}
@@ -19950,7 +19996,7 @@ IL_0021:
 		int32_t L_10 = ___2_count;
 		NullCheck(L_7);
 		int32_t L_11;
-		L_11 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30, L_7, L_8, L_9, L_10);
+		L_11 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(31, L_7, L_8, L_9, L_10);
 		*((int32_t*)L_6) = (int32_t)L_11;
 		return;
 	}
@@ -24121,6 +24167,22 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PreloadData_PreloadDataDontStripMe_mB4D9
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SystemInfo_get_operatingSystem_m47B20646C221517ACA8F99DE8576BF794AEB6F8D (const RuntimeMethod* method) 
+{
+	String_t* V_0 = NULL;
+	{
+		String_t* L_0;
+		L_0 = SystemInfo_GetOperatingSystem_m03DA0E31D9925BE604EC7841D7C3540D953F9720(NULL);
+		V_0 = L_0;
+		goto IL_0009;
+	}
+
+IL_0009:
+	{
+		String_t* L_1 = V_0;
+		return L_1;
+	}
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_get_operatingSystemFamily_mC8B13A7D2F34699EDDA4F7629F117C76F0C865FA (const RuntimeMethod* method) 
 {
 	int32_t V_0 = 0;
@@ -24288,6 +24350,15 @@ IL_0009:
 		return L_1;
 	}
 }
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SystemInfo_GetOperatingSystem_m03DA0E31D9925BE604EC7841D7C3540D953F9720 (const RuntimeMethod* method) 
+{
+	typedef String_t* (*SystemInfo_GetOperatingSystem_m03DA0E31D9925BE604EC7841D7C3540D953F9720_ftn) ();
+	static SystemInfo_GetOperatingSystem_m03DA0E31D9925BE604EC7841D7C3540D953F9720_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (SystemInfo_GetOperatingSystem_m03DA0E31D9925BE604EC7841D7C3540D953F9720_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.SystemInfo::GetOperatingSystem()");
+	String_t* icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_GetOperatingSystemFamily_mE40096D3196E10CC8940F79B729CA985D1CD4396 (const RuntimeMethod* method) 
 {
 	typedef int32_t (*SystemInfo_GetOperatingSystemFamily_mE40096D3196E10CC8940F79B729CA985D1CD4396_ftn) ();
@@ -24377,6 +24448,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SystemInfo_GetGraphicsFormat_mF4A09D3
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) 
+{
+	typedef float (*Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B_ftn) ();
+	static Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Time::get_time()");
+	float icallRetVal = _il2cpp_icall_func();
+	return icallRetVal;
+}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) 
 {
 	typedef float (*Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865_ftn) ();
@@ -24906,32 +24986,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TouchScreenKeyboard_set_active_m4382D57F
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (TouchScreenKeyboard_set_active_m4382D57F87E4C86B59864E86BE93A8A2A474B7C2_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TouchScreenKeyboard::set_active(System.Boolean)");
 	_il2cpp_icall_func(__this, ___0_value);
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TouchScreenKeyboard_GetDone_m5C6DF58F8D1FD6C08AA6CA79066A026FB95E64DA (intptr_t ___0_ptr, const RuntimeMethod* method) 
-{
-	typedef bool (*TouchScreenKeyboard_GetDone_m5C6DF58F8D1FD6C08AA6CA79066A026FB95E64DA_ftn) (intptr_t);
-	static TouchScreenKeyboard_GetDone_m5C6DF58F8D1FD6C08AA6CA79066A026FB95E64DA_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (TouchScreenKeyboard_GetDone_m5C6DF58F8D1FD6C08AA6CA79066A026FB95E64DA_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.TouchScreenKeyboard::GetDone(System.IntPtr)");
-	bool icallRetVal = _il2cpp_icall_func(___0_ptr);
-	return icallRetVal;
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TouchScreenKeyboard_get_done_mA22B6A047F91D949AA8ABC97ACE6CD8D15320004 (TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A* __this, const RuntimeMethod* method) 
-{
-	bool V_0 = false;
-	{
-		intptr_t L_0 = __this->___m_Ptr;
-		bool L_1;
-		L_1 = TouchScreenKeyboard_GetDone_m5C6DF58F8D1FD6C08AA6CA79066A026FB95E64DA(L_0, NULL);
-		V_0 = L_1;
-		goto IL_000f;
-	}
-
-IL_000f:
-	{
-		bool L_2 = V_0;
-		return L_2;
-	}
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t TouchScreenKeyboard_get_status_mCC466FDEC7E1913D8585ABA7F048FC198CB19504 (TouchScreenKeyboard_tE87B78A3DAED69816B44C99270A734682E093E7A* __this, const RuntimeMethod* method) 
 {
