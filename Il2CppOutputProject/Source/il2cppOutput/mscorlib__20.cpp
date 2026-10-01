@@ -141,7 +141,6 @@ struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2;
 struct EraInfo_t93ABF7759E8286C5F600445DF5B6C72AAB351921;
 struct Exception_t;
 struct ExecutionContext_t9D6EDFD92F0B2D391751963E2D77A8B03CB81710;
-struct FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B;
 struct GregorianCalendar_t6CC2956C5298E69CE93FE53A9DF5AE4F33621815;
 struct GregorianCalendarHelper_tC77507376E36EEDABC1786237BADF1BF459F9723;
 struct HijriCalendar_tDFE8FA5A3B47F494C0D9AEDAD2DE75215AFC63D9;
@@ -159,7 +158,6 @@ struct NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8;
 struct NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472;
 struct OrdinalCaseSensitiveComparer_t581CA7CB51DCF00B6012A697A4B4B3067144521A;
 struct OrdinalIgnoreCaseComparer_t8BAE11990A4C855D3BCBBFB42F4EF8D45088FBB0;
-struct OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C;
 struct PlatformNotSupportedException_tD2BD7EB9278518AA5FE8AE75AD5D0D4298A4631A;
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
 struct SerializationException_t09D5CC39CEF9CC37AC9D2E0C6DBE050B4E3F8CA7;
@@ -198,7 +196,6 @@ IL2CPP_EXTERN_C RuntimeClass* Dictionary_2_t5C8F46F5D57502270DD9E1DA8303B23C7FE8
 IL2CPP_EXTERN_C RuntimeClass* EncodingTable_t7E8487AA3AF93A542BCB5CD07480C5ED1BCBFBF9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EraInfoU5BU5D_t3FC74518173AF52EC901FC118D4BD9A11DE89BAC_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* EraInfo_t93ABF7759E8286C5F600445DF5B6C72AAB351921_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GlobalizationMode_t8C0DD244B8C6347DE7AB7AE83B10911D2EB7582A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GregorianCalendarHelper_tC77507376E36EEDABC1786237BADF1BF459F9723_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GregorianCalendarTypes_t9A62C461D39468C1355F53D0B4D4848773C62C2E_il2cpp_TypeInfo_var;
@@ -216,7 +213,6 @@ IL2CPP_EXTERN_C RuntimeClass* JapaneseCalendar_t639E4548E016255B55B31A644186A40A
 IL2CPP_EXTERN_C RuntimeClass* NotImplementedException_t6366FE4DCF15094C51F4833B91A2AE68D4DA90E8_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* PlatformNotSupportedException_tD2BD7EB9278518AA5FE8AE75AD5D0D4298A4631A_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RuntimeObject_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SerializationException_t09D5CC39CEF9CC37AC9D2E0C6DBE050B4E3F8CA7_il2cpp_TypeInfo_var;
@@ -906,7 +902,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* TextInfo_ToUpper_m9068E49BB90F710F3042DCAA9
 IL2CPP_EXTERN_C const RuntimeMethod* TextInfo__ctor_mFE2B0EEA83CDA1A733AC15B0FA3AD0BC975C5E6B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ThaiBuddhistCalendar_ToFourDigitYear_m2B4137933846D693556A2C5068AC61C904174145_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* ThaiBuddhistCalendar_set_TwoDigitYearMax_m8927EC2BCFC2AE7A00F2DF00352DF6C194BEE356_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UmAlQuraCalendar_CheckEraRange_mDE9AA06043506EEA0A0928177B8ECFFD17C2D5E6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UmAlQuraCalendar_CheckTicksRange_mBA2959172A68F005AA5CA882A79BC94E6CB9E58B_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* UmAlQuraCalendar_CheckYearMonthRange_mD7B80AB6ADA0B466AEED666697FD1CBBF85136B8_RuntimeMethod_var;
@@ -1708,12 +1703,6 @@ struct ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263  : public Sys
 {
 	String_t* ____paramName;
 };
-struct ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
-{
-};
-struct FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
-{
-};
 struct InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
 {
 };
@@ -1757,9 +1746,6 @@ struct ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129  : public
 struct ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F  : public ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263
 {
 	RuntimeObject* ____actualValue;
-};
-struct OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C  : public ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA
-{
 };
 struct PlatformNotSupportedException_tD2BD7EB9278518AA5FE8AE75AD5D0D4298A4631A  : public NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A
 {
@@ -2383,13 +2369,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m72CC2F1213D1C1B8A
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Dictionary_2_TryGetValue_m7316301B8CF47FB538886B229B2749EC160B9D5C_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, int32_t ___0_key, RuntimeObject** ___1_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Dictionary_2_set_Item_m2888D71A14F2B8510102F24FEE90552E91B124C1_gshared (Dictionary_2_tA75D1125AC9BE8F005BA9B868B373398E643C907* __this, int32_t ___0_key, RuntimeObject* ___1_value, const RuntimeMethod* method) ;
 
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeSpanResult__ctor_m7B7631A4C6E93FCB42AF9F050CFC9438B559BCDE (TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* __this, bool ___0_throwOnFailure, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SR_GetResourceString_m10BCB05F0B61836C66DAC9C1A8D68C82B0781F1E (String_t* ___0_str, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m6D9C7B47EA708382838B264BA02EBB7576DFA155 (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___0_paramName, String_t* ___1_message, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SR_Format_m9E8DC9AEFDC34AC67473EFAEAB78C5066C1A0D09 (String_t* ___0_resourceFormat, RuntimeObject* ___1_p1, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FormatException__ctor_mE04AEA59C0EEFF4BD34B7CE8601F9D331D1D473E (FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B* __this, String_t* ___0_message, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void OverflowException__ctor_m2B99D79236B7B87C0BB6C9AB2E557DECE481C264 (OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C* __this, String_t* ___0_message, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5 (TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* __this, uint8_t ___0_kind, String_t* ___1_resourceKey, RuntimeObject* ___2_messageArgument, String_t* ___3_argumentName, const RuntimeMethod* method) ;
 inline int32_t ReadOnlySpan_1_get_Length_m36BD32453530B535FE60A8123643219FEAABC351_inline (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1* __this, const RuntimeMethod* method)
 {
 	return ((  int32_t (*) (ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1*, const RuntimeMethod*))ReadOnlySpan_1_get_Length_m36BD32453530B535FE60A8123643219FEAABC351_gshared_inline)(__this, method);
@@ -2399,6 +2378,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StringParser_SkipBlanks_mA967C7B67937723
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Il2CppChar StringParser_NextNonDigit_m42F4B4BDCDB2B9CFDD7536AA063FCE1997FB54EF (StringParser_tBEB9E0DE757649065F3DAC284EBD029545747775* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StringParser_ParseTime_mD21261F8A5E4372105DCD33A409DBCFE4E4FB48F (StringParser_tBEB9E0DE757649065F3DAC284EBD029545747775* __this, int64_t* ___0_time, TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* ___1_result, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool StringParser_ParseInt_mE71763C8FF55CAB49167A17D9C266204CAE4A208 (StringParser_tBEB9E0DE757649065F3DAC284EBD029545747775* __this, int32_t ___0_max, int32_t* ___1_i, TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* ___2_result, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5 (TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* __this, uint8_t ___0_kind, String_t* ___1_resourceKey, RuntimeObject* ___2_messageArgument, String_t* ___3_argumentName, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void TimeSpan__ctor_m061B122FA11D2063FE751C1F1D019DF1C8B10B1F_inline (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A* __this, int64_t ___0_ticks, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool GlobalizationMode_GetGlobalizationInvariantMode_m907CEFAF920331075174D2EA96F089321CC76A13 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
@@ -2497,6 +2477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Type_t* Type_GetTypeFromHandle_m6062B81682F79
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* NumberFormatInfo_get_CurrentInfo_m121C9878F777AD81289C7B2BF589293E509FD9B4 (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* Thread_get_CurrentThread_m6D4719F4993DB9200490531FF02D4076FF9CA9BD (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR CultureInfo_t9BA817D41AD55AC8BD07480DD8AC22F8FFA378E0* Thread_get_CurrentCulture_mD011FDBB62CA34E83A1D1916628826ADAC85E7A6 (Thread_t0A773B9DE873D2DCAA7D229EAB36757B500E207F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m6D9C7B47EA708382838B264BA02EBB7576DFA155 (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___0_paramName, String_t* ___1_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NumberFormatInfo_VerifyWritable_m2B1C4E1D5770936E3AB4ABD954245B0B581BE8BE (NumberFormatInfo_t8E26808B202927FEBF9064FCFEEA4D6E076E6472* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Type_op_Equality_m99930A0E44E420A685FABA60E60BA1CC5FA0EBDC (Type_t* ___0_left, Type_t* ___1_right, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___0_paramName, const RuntimeMethod* method) ;
@@ -2628,157 +2609,6 @@ inline void Dictionary_2_set_Item_m4517B064A445BEED51581EB1C89BF464E8F01F6D (Dic
 {
 	((  void (*) (Dictionary_2_t4A66E55DEE67263E1D7B09B4693FD0F41C204B21*, int32_t, CodePageDataItem_t52460FA30AE37F4F26ACB81055E58002262F19F2*, const RuntimeMethod*))Dictionary_2_set_Item_m2888D71A14F2B8510102F24FEE90552E91B124C1_gshared)(__this, ___0_key, ___1_value, method);
 }
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C void TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshal_pinvoke(const TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7& unmarshaled, TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshaled_pinvoke& marshaled)
-{
-	marshaled.___parsedTimeSpan = unmarshaled.___parsedTimeSpan;
-	marshaled.____throwOnFailure = static_cast<int32_t>(unmarshaled.____throwOnFailure);
-}
-IL2CPP_EXTERN_C void TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshal_pinvoke_back(const TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshaled_pinvoke& marshaled, TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7& unmarshaled)
-{
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A unmarshaledparsedTimeSpan_temp_0;
-	memset((&unmarshaledparsedTimeSpan_temp_0), 0, sizeof(unmarshaledparsedTimeSpan_temp_0));
-	unmarshaledparsedTimeSpan_temp_0 = marshaled.___parsedTimeSpan;
-	unmarshaled.___parsedTimeSpan = unmarshaledparsedTimeSpan_temp_0;
-	bool unmarshaled_throwOnFailure_temp_1 = false;
-	unmarshaled_throwOnFailure_temp_1 = static_cast<bool>(marshaled.____throwOnFailure);
-	unmarshaled.____throwOnFailure = unmarshaled_throwOnFailure_temp_1;
-}
-IL2CPP_EXTERN_C void TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshal_pinvoke_cleanup(TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshaled_pinvoke& marshaled)
-{
-}
-IL2CPP_EXTERN_C void TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshal_com(const TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7& unmarshaled, TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshaled_com& marshaled)
-{
-	marshaled.___parsedTimeSpan = unmarshaled.___parsedTimeSpan;
-	marshaled.____throwOnFailure = static_cast<int32_t>(unmarshaled.____throwOnFailure);
-}
-IL2CPP_EXTERN_C void TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshal_com_back(const TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshaled_com& marshaled, TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7& unmarshaled)
-{
-	TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A unmarshaledparsedTimeSpan_temp_0;
-	memset((&unmarshaledparsedTimeSpan_temp_0), 0, sizeof(unmarshaledparsedTimeSpan_temp_0));
-	unmarshaledparsedTimeSpan_temp_0 = marshaled.___parsedTimeSpan;
-	unmarshaled.___parsedTimeSpan = unmarshaledparsedTimeSpan_temp_0;
-	bool unmarshaled_throwOnFailure_temp_1 = false;
-	unmarshaled_throwOnFailure_temp_1 = static_cast<bool>(marshaled.____throwOnFailure);
-	unmarshaled.____throwOnFailure = unmarshaled_throwOnFailure_temp_1;
-}
-IL2CPP_EXTERN_C void TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshal_com_cleanup(TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7_marshaled_com& marshaled)
-{
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimeSpanResult__ctor_m7B7631A4C6E93FCB42AF9F050CFC9438B559BCDE (TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* __this, bool ___0_throwOnFailure, const RuntimeMethod* method) 
-{
-	{
-		TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A* L_0 = (TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A*)(&__this->___parsedTimeSpan);
-		il2cpp_codegen_initobj(L_0, sizeof(TimeSpan_t8195C5B013A2C532FEBDF0B64B6911982E750F5A));
-		bool L_1 = ___0_throwOnFailure;
-		__this->____throwOnFailure = L_1;
-		return;
-	}
-}
-IL2CPP_EXTERN_C  void TimeSpanResult__ctor_m7B7631A4C6E93FCB42AF9F050CFC9438B559BCDE_AdjustorThunk (RuntimeObject* __this, bool ___0_throwOnFailure, const RuntimeMethod* method)
-{
-	TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7*>(__this + _offset);
-	TimeSpanResult__ctor_m7B7631A4C6E93FCB42AF9F050CFC9438B559BCDE(_thisAdjusted, ___0_throwOnFailure, method);
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5 (TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* __this, uint8_t ___0_kind, String_t* ___1_resourceKey, RuntimeObject* ___2_messageArgument, String_t* ___3_argumentName, const RuntimeMethod* method) 
-{
-	String_t* V_0 = NULL;
-	{
-		bool L_0 = __this->____throwOnFailure;
-		if (L_0)
-		{
-			goto IL_000a;
-		}
-	}
-	{
-		return (bool)0;
-	}
-
-IL_000a:
-	{
-		String_t* L_1 = ___1_resourceKey;
-		String_t* L_2;
-		L_2 = SR_GetResourceString_m10BCB05F0B61836C66DAC9C1A8D68C82B0781F1E(L_1, NULL);
-		V_0 = L_2;
-		uint8_t L_3 = ___0_kind;
-		switch (((int32_t)il2cpp_codegen_subtract((int32_t)L_3, 1)))
-		{
-			case 0:
-			{
-				goto IL_002b;
-			}
-			case 1:
-			{
-				goto IL_0048;
-			}
-			case 2:
-			{
-				goto IL_0034;
-			}
-			case 3:
-			{
-				goto IL_0041;
-			}
-		}
-	}
-	{
-		goto IL_0048;
-	}
-
-IL_002b:
-	{
-		String_t* L_4 = ___3_argumentName;
-		String_t* L_5 = V_0;
-		ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* L_6 = (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129_il2cpp_TypeInfo_var)));
-		ArgumentNullException__ctor_m6D9C7B47EA708382838B264BA02EBB7576DFA155(L_6, L_4, L_5, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_6, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5_RuntimeMethod_var)));
-	}
-
-IL_0034:
-	{
-		String_t* L_7 = V_0;
-		RuntimeObject* L_8 = ___2_messageArgument;
-		String_t* L_9;
-		L_9 = SR_Format_m9E8DC9AEFDC34AC67473EFAEAB78C5066C1A0D09(L_7, L_8, NULL);
-		FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B* L_10 = (FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B_il2cpp_TypeInfo_var)));
-		FormatException__ctor_mE04AEA59C0EEFF4BD34B7CE8601F9D331D1D473E(L_10, L_9, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5_RuntimeMethod_var)));
-	}
-
-IL_0041:
-	{
-		String_t* L_11 = V_0;
-		OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C* L_12 = (OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&OverflowException_t6F6AD8CACE20C37F701C05B373A215C4802FAB0C_il2cpp_TypeInfo_var)));
-		OverflowException__ctor_m2B99D79236B7B87C0BB6C9AB2E557DECE481C264(L_12, L_11, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_12, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5_RuntimeMethod_var)));
-	}
-
-IL_0048:
-	{
-		String_t* L_13 = V_0;
-		FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B* L_14 = (FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&FormatException_tCD210E92627903FFEDAAA706C08FB6222B4D012B_il2cpp_TypeInfo_var)));
-		FormatException__ctor_mE04AEA59C0EEFF4BD34B7CE8601F9D331D1D473E(L_14, L_13, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_14, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5_RuntimeMethod_var)));
-	}
-}
-IL2CPP_EXTERN_C  bool TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5_AdjustorThunk (RuntimeObject* __this, uint8_t ___0_kind, String_t* ___1_resourceKey, RuntimeObject* ___2_messageArgument, String_t* ___3_argumentName, const RuntimeMethod* method)
-{
-	TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7* _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<TimeSpanResult_tD0B15293C8224251926B8E7F9D699E00A0CB10B7*>(__this + _offset);
-	bool _returnValue;
-	_returnValue = TimeSpanResult_SetFailure_m2732B210A9FC550C4237D287DACAAAED3CABB7D5(_thisAdjusted, ___0_kind, ___1_resourceKey, ___2_messageArgument, ___3_argumentName, method);
-	return _returnValue;
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"

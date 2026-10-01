@@ -3349,7 +3349,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint8_t SkeletonInput_ReadByte_m3A5170461B77C
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = __this->___input;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(33, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_0);
 		return (uint8_t)((int32_t)(uint8_t)L_1);
 	}
 }
@@ -3361,7 +3361,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int8_t SkeletonInput_ReadSByte_mF4FEC47729355
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = __this->___input;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(33, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_0);
 		int32_t L_2 = L_1;
 		if ((!(((uint32_t)L_2) == ((uint32_t)(-1)))))
 		{
@@ -3387,7 +3387,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool SkeletonInput_ReadBoolean_m8C630C5DB2EE2
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = __this->___input;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(33, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_0);
 		return (bool)((!(((uint32_t)L_1) <= ((uint32_t)0)))? 1 : 0);
 	}
 }
@@ -3398,7 +3398,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float SkeletonInput_ReadFloat_m19F24AAE3DF2A5
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = __this->___bytesBigEndian;
 		NullCheck(L_0);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(31, L_0, L_1, 0, 4);
+		L_2 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30, L_0, L_1, 0, 4);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = __this->___chars;
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_4 = __this->___bytesBigEndian;
 		NullCheck(L_4);
@@ -3440,7 +3440,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SkeletonInput_ReadInt_mF4BF5FCB73D18C
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_1 = __this->___bytesBigEndian;
 		NullCheck(L_0);
 		int32_t L_2;
-		L_2 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(31, L_0, L_1, 0, 4);
+		L_2 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30, L_0, L_1, 0, 4);
 		ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031* L_3 = __this->___bytesBigEndian;
 		NullCheck(L_3);
 		int32_t L_4 = 0;
@@ -3468,7 +3468,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SkeletonInput_ReadInt_mC4D39883B34769
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0 = __this->___input;
 		NullCheck(L_0);
 		int32_t L_1;
-		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(33, L_0);
+		L_1 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_0);
 		V_0 = L_1;
 		int32_t L_2 = V_0;
 		V_1 = ((int32_t)(L_2&((int32_t)127)));
@@ -3482,7 +3482,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SkeletonInput_ReadInt_mC4D39883B34769
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_4 = __this->___input;
 		NullCheck(L_4);
 		int32_t L_5;
-		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(33, L_4);
+		L_5 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_4);
 		V_0 = L_5;
 		int32_t L_6 = V_1;
 		int32_t L_7 = V_0;
@@ -3497,7 +3497,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SkeletonInput_ReadInt_mC4D39883B34769
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_9 = __this->___input;
 		NullCheck(L_9);
 		int32_t L_10;
-		L_10 = VirtualFuncInvoker0< int32_t >::Invoke(33, L_9);
+		L_10 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_9);
 		V_0 = L_10;
 		int32_t L_11 = V_1;
 		int32_t L_12 = V_0;
@@ -3512,7 +3512,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SkeletonInput_ReadInt_mC4D39883B34769
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_14 = __this->___input;
 		NullCheck(L_14);
 		int32_t L_15;
-		L_15 = VirtualFuncInvoker0< int32_t >::Invoke(33, L_14);
+		L_15 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_14);
 		V_0 = L_15;
 		int32_t L_16 = V_1;
 		int32_t L_17 = V_0;
@@ -3528,7 +3528,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t SkeletonInput_ReadInt_mC4D39883B34769
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_20 = __this->___input;
 		NullCheck(L_20);
 		int32_t L_21;
-		L_21 = VirtualFuncInvoker0< int32_t >::Invoke(33, L_20);
+		L_21 = VirtualFuncInvoker0< int32_t >::Invoke(32, L_20);
 		V_1 = ((int32_t)(L_19|((int32_t)(((int32_t)(L_21&((int32_t)127)))<<((int32_t)28)))));
 	}
 
@@ -3673,7 +3673,7 @@ IL_0002:
 		int32_t L_3 = ___2_length;
 		NullCheck(L_0);
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(31, L_0, L_1, L_2, L_3);
+		L_4 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30, L_0, L_1, L_2, L_3);
 		V_0 = L_4;
 		int32_t L_5 = V_0;
 		if ((((int32_t)L_5) > ((int32_t)0)))

@@ -214,6 +214,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_get_isPlaying();
 		Register_UnityEngine_Application_get_isPlaying();
 
+		//System.String UnityEngine.Application::get_absoluteURL()
+		void Register_UnityEngine_Application_get_absoluteURL();
+		Register_UnityEngine_Application_get_absoluteURL();
+
 		//System.String UnityEngine.Application::get_persistentDataPath()
 		void Register_UnityEngine_Application_get_persistentDataPath();
 		Register_UnityEngine_Application_get_persistentDataPath();
@@ -1093,6 +1097,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.Component UnityEngine.GameObject::TryGetComponentInternal(System.Type)
 		void Register_UnityEngine_GameObject_TryGetComponentInternal();
 		Register_UnityEngine_GameObject_TryGetComponentInternal();
+
+		//UnityEngine.GameObject UnityEngine.GameObject::Find(System.String)
+		void Register_UnityEngine_GameObject_Find();
+		Register_UnityEngine_GameObject_Find();
 
 		//UnityEngine.Transform UnityEngine.GameObject::get_transform()
 		void Register_UnityEngine_GameObject_get_transform();
@@ -2461,6 +2469,10 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.PropertyNameUtils
 
 	//Start Registrations for type : UnityEngine.QualitySettings
+
+		//System.Int32 UnityEngine.QualitySettings::get_vSyncCount()
+		void Register_UnityEngine_QualitySettings_get_vSyncCount();
+		Register_UnityEngine_QualitySettings_get_vSyncCount();
 
 		//System.Void UnityEngine.QualitySettings::set_vSyncCount(System.Int32)
 		void Register_UnityEngine_QualitySettings_set_vSyncCount();

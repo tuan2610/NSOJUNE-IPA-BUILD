@@ -186,7 +186,6 @@
 		0B698999CFCA23787EA976B2 /* Assembly-CSharp__8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__8.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__8.cpp"; sourceTree = SOURCE_ROOT; };
 		0BA96E6B209B116C8EEF24BE /* Assembly-CSharp__160.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__160.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__160.cpp"; sourceTree = SOURCE_ROOT; };
 		0BB77086806E4A58D8D30F3F /* Assembly-CSharp__300.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__300.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__300.cpp"; sourceTree = SOURCE_ROOT; };
-		0CB03E74032895F5193A4B8C /* Assembly-CSharp__399.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__399.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__399.cpp"; sourceTree = SOURCE_ROOT; };
 		0D2839EF8521B0C53FBA6E7B /* Assembly-CSharp__135.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__135.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__135.cpp"; sourceTree = SOURCE_ROOT; };
 		0D31AAF3C6C0CC11D285C738 /* UnityEngine.CoreModule__2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.CoreModule__2.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.CoreModule__2.cpp; sourceTree = SOURCE_ROOT; };
 		0D74EFEA392C0E65155F7A96 /* UnityEngine.PropertiesModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.PropertiesModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.PropertiesModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
@@ -262,7 +261,6 @@
 		281C42299328C048E86EC2CF /* Assembly-CSharp__157.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__157.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__157.cpp"; sourceTree = SOURCE_ROOT; };
 		2879BB350A7422A5E68DADBD /* Assembly-CSharp__130.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__130.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__130.cpp"; sourceTree = SOURCE_ROOT; };
 		28C3B8EF48C0EB6F619F326F /* System.Core.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = System.Core.cpp; path = Il2CppOutputProject/Source/il2cppOutput/System.Core.cpp; sourceTree = SOURCE_ROOT; };
-		296C5595414C1020FA8E3531 /* Assembly-CSharp__401.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__401.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__401.cpp"; sourceTree = SOURCE_ROOT; };
 		29DB862887FD80F9544C0F27 /* UnityEngine.CoreModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.CoreModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.CoreModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		2A4E1F27CBC17CFBC9D90381 /* UnityEngine.UIElementsModule__11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__11.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__11.cpp; sourceTree = SOURCE_ROOT; };
 		2B422D1DE14C2A8D3F21065A /* UnityEngine.UIElementsModule__1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__1.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__1.cpp; sourceTree = SOURCE_ROOT; };
@@ -350,7 +348,6 @@
 		493162FFBED65B522171A7D2 /* Assembly-CSharp__366.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__366.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__366.cpp"; sourceTree = SOURCE_ROOT; };
 		49659B70A3F6165CD10F69D9 /* Assembly-CSharp__140.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__140.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__140.cpp"; sourceTree = SOURCE_ROOT; };
 		4A8BF4F505104D1B8AE63E79 /* Assembly-CSharp__48.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__48.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__48.cpp"; sourceTree = SOURCE_ROOT; };
-		4A9DDB46621E00D9B96A4F91 /* Assembly-CSharp__400.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__400.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__400.cpp"; sourceTree = SOURCE_ROOT; };
 		4AC4B888B5CEACD878F1BC87 /* Assembly-CSharp__288.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__288.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__288.cpp"; sourceTree = SOURCE_ROOT; };
 		4D1DA663F71360CF2CE470FB /* Assembly-CSharp__165.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__165.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__165.cpp"; sourceTree = SOURCE_ROOT; };
 		4D50A4F9D7E84F8251258DB2 /* Assembly-CSharp__384.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__384.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__384.cpp"; sourceTree = SOURCE_ROOT; };
@@ -681,7 +678,6 @@
 		A8B34F91ED9470E89A62A1A4 /* Assembly-CSharp__237.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__237.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__237.cpp"; sourceTree = SOURCE_ROOT; };
 		A8EB050C496A3CF9B48DB001 /* Generics__53.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Generics__53.cpp; path = Il2CppOutputProject/Source/il2cppOutput/Generics__53.cpp; sourceTree = SOURCE_ROOT; };
 		A918C8B44A33797E60C31B4D /* UnityEngine.ImageConversionModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.ImageConversionModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.ImageConversionModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
-		A9F70B9C8187AC0B6304A334 /* Assembly-CSharp__397.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__397.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__397.cpp"; sourceTree = SOURCE_ROOT; };
 		AA31BF961B55660D0013FB1B /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		AA5D99861AFAD3C800B27605 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		AAC3E38B1A68945900F6174A /* RegisterFeatures.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegisterFeatures.cpp; sourceTree = "<group>"; };
@@ -692,7 +688,6 @@
 		AAFE69D119F187C200638316 /* UnityViewControllerListener.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = UnityViewControllerListener.mm; sourceTree = "<group>"; };
 		AB2BF8F7BAFBE6886580905D /* mscorlib__22.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mscorlib__22.cpp; path = Il2CppOutputProject/Source/il2cppOutput/mscorlib__22.cpp; sourceTree = SOURCE_ROOT; };
 		ABF66CEE0A3ACFFBDA78140E /* UnityEngine.UIElementsModule__12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = UnityEngine.UIElementsModule__12.cpp; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.UIElementsModule__12.cpp; sourceTree = SOURCE_ROOT; };
-		AC23394F03D2C6ABF9B07A53 /* Assembly-CSharp__396.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__396.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__396.cpp"; sourceTree = SOURCE_ROOT; };
 		ACE173F91BF3866BEA121D66 /* UnityEngine.SharedInternalsModule_CodeGen.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = UnityEngine.SharedInternalsModule_CodeGen.c; path = Il2CppOutputProject/Source/il2cppOutput/UnityEngine.SharedInternalsModule_CodeGen.c; sourceTree = SOURCE_ROOT; };
 		AD3C154F80F47532952859E9 /* Assembly-CSharp__106.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__106.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__106.cpp"; sourceTree = SOURCE_ROOT; };
 		ADDE8304889371F76E932AC4 /* Assembly-CSharp__243.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__243.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__243.cpp"; sourceTree = SOURCE_ROOT; };
@@ -896,7 +891,6 @@
 		FB51B644EAB3FE2589187E28 /* Assembly-CSharp__328.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__328.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__328.cpp"; sourceTree = SOURCE_ROOT; };
 		FB68BCCBEF900D52F7790AC5 /* Assembly-CSharp__320.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__320.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__320.cpp"; sourceTree = SOURCE_ROOT; };
 		FB6B36B494A8EAC6400D135A /* Assembly-CSharp__268.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__268.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__268.cpp"; sourceTree = SOURCE_ROOT; };
-		FBC06B82B7AFE435FF835019 /* Assembly-CSharp__398.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__398.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__398.cpp"; sourceTree = SOURCE_ROOT; };
 		FBC612E6384E75248864C05D /* Assembly-CSharp__216.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = "Assembly-CSharp__216.cpp"; path = "Il2CppOutputProject/Source/il2cppOutput/Assembly-CSharp__216.cpp"; sourceTree = SOURCE_ROOT; };
 		FC0B20A11B7A4F0B00FDFC55 /* OnDemandResources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OnDemandResources.mm; sourceTree = "<group>"; };
 		FC3D7EBE16D2621600D1BD0D /* CrashReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashReporter.h; sourceTree = "<group>"; };
@@ -1379,14 +1373,8 @@
 				5355871566619F9107364F4F /* Assembly-CSharp__393.cpp */,
 				EC683514F54F19122EF5D86A /* Assembly-CSharp__394.cpp */,
 				E271F0D4AB62C0C501E193EF /* Assembly-CSharp__395.cpp */,
-				AC23394F03D2C6ABF9B07A53 /* Assembly-CSharp__396.cpp */,
-				A9F70B9C8187AC0B6304A334 /* Assembly-CSharp__397.cpp */,
-				FBC06B82B7AFE435FF835019 /* Assembly-CSharp__398.cpp */,
-				0CB03E74032895F5193A4B8C /* Assembly-CSharp__399.cpp */,
 				4F97D266790DB44CD01959EC /* Assembly-CSharp__4.cpp */,
 				D0377ED2DD21A2FE426123F1 /* Assembly-CSharp__40.cpp */,
-				4A9DDB46621E00D9B96A4F91 /* Assembly-CSharp__400.cpp */,
-				296C5595414C1020FA8E3531 /* Assembly-CSharp__401.cpp */,
 				C08898ABC22AC52604E841BD /* Assembly-CSharp__41.cpp */,
 				08D9ECBDADDA4DD82C86134D /* Assembly-CSharp__42.cpp */,
 				5D2CB0C1599CC73B675915AB /* Assembly-CSharp__43.cpp */,
@@ -2348,7 +2336,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME_APP = TUNADZ;
+				PRODUCT_NAME_APP = RONGTHANONLINE;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 			};
@@ -2473,7 +2461,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME_APP = TUNADZ;
+				PRODUCT_NAME_APP = RONGTHANONLINE;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 			};
@@ -3045,7 +3033,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME_APP = TUNADZ;
+				PRODUCT_NAME_APP = RONGTHANONLINE;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 			};
@@ -3084,7 +3072,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				PRODUCT_NAME_APP = TUNADZ;
+				PRODUCT_NAME_APP = RONGTHANONLINE;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = iphoneos;
 			};

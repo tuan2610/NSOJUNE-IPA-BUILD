@@ -330,9 +330,7 @@ struct OutOfMemoryException_tE6DC2F937EC4A8699271D5151C4DF83BDE99EE7F;
 struct PublicKey_t489DEA83CED0412BF5E066D3BC4527361DCFC405;
 struct RSA_tDDE9BD4C9806074FA9B1C6A5C93523A97116F21A;
 struct RemoteCertificateValidationCallback_t2F4C5801F96B2C2BF934511796C5BFEAEBF01955;
-struct RequestCacheBinding_t18F3F4FF8D0F77E86C2C666CEE7FD48A80C042EE;
 struct RequestCachePolicy_tF15C94C5E458478914D5EB17753294BD488B0550;
-struct RequestCacheProtocol_t43C1AC170194874A0C0B0D3B8BE9EABFB613DF85;
 struct SafeHandle_tC1A4DA80DA89B867CC011B707A07275230321BF7;
 struct SafePasswordHandle_t07A3BFCF046DFE44216ACE030F838C8AE2564463;
 struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
@@ -2357,9 +2355,6 @@ struct WebRequest_t89050438AE9A5AA9221ECAE223584127F7C1294B  : public MarshalByR
 {
 	int32_t ___m_AuthenticationLevel;
 	int32_t ___m_ImpersonationLevel;
-	RequestCachePolicy_tF15C94C5E458478914D5EB17753294BD488B0550* ___m_CachePolicy;
-	RequestCacheProtocol_t43C1AC170194874A0C0B0D3B8BE9EABFB613DF85* ___m_CacheProtocol;
-	RequestCacheBinding_t18F3F4FF8D0F77E86C2C666CEE7FD48A80C042EE* ___m_CacheBinding;
 };
 struct X509Certificate2_t2BEAEA485A3CEA81D191B12A341675DBC54CDD2D  : public X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4
 {
@@ -16537,7 +16532,7 @@ IL_0013:
 	}
 	{
 		bool L_3;
-		L_3 = VirtualFuncInvoker0< bool >::Invoke(37, __this);
+		L_3 = VirtualFuncInvoker0< bool >::Invoke(36, __this);
 		if (L_3)
 		{
 			goto IL_0029;
@@ -18489,22 +18484,11 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int64_t MobileAuthenticatedStream_Seek_mC6C07
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MobileAuthenticatedStream_Seek_mC6C077D712D53180D6D3676CCAB67810A57041DE_RuntimeMethod_var)));
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobileAuthenticatedStream_SetLength_m46CDB4C9A73652B8DF812B305342C6874B063A60 (MobileAuthenticatedStream_tD0306DC2B0CDA3C7DB261C19FFA35CA8EE24309E* __this, int64_t ___0_value, const RuntimeMethod* method) 
-{
-	{
-		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_0;
-		L_0 = AuthenticatedStream_get_InnerStream_m5BDA4857898A90C696DAD90FD61C536FC3EB10C7_inline(__this, NULL);
-		int64_t L_1 = ___0_value;
-		NullCheck(L_0);
-		VirtualActionInvoker1< int64_t >::Invoke(30, L_0, L_1);
-		return;
-	}
-}
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MobileAuthenticatedStream_get_CanRead_m206F7DA5CC6E445B2E23678344AD847C72929BED (MobileAuthenticatedStream_tD0306DC2B0CDA3C7DB261C19FFA35CA8EE24309E* __this, const RuntimeMethod* method) 
 {
 	{
 		bool L_0;
-		L_0 = VirtualFuncInvoker0< bool >::Invoke(37, __this);
+		L_0 = VirtualFuncInvoker0< bool >::Invoke(36, __this);
 		if (!L_0)
 		{
 			goto IL_0014;
@@ -18539,7 +18523,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool MobileAuthenticatedStream_get_CanWrite_m
 {
 	{
 		bool L_0;
-		L_0 = VirtualFuncInvoker0< bool >::Invoke(37, __this);
+		L_0 = VirtualFuncInvoker0< bool >::Invoke(36, __this);
 		Stream_tF844051B786E8F7F4244DBD218D74E8617B9A2DE* L_1;
 		L_1 = AuthenticatedStream_get_InnerStream_m5BDA4857898A90C696DAD90FD61C536FC3EB10C7_inline(__this, NULL);
 		NullCheck(L_1);
@@ -18668,7 +18652,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobileAuthenticatedStream_U3CInnerWriteU
 		NullCheck(L_5);
 		int32_t L_6 = ((BufferOffsetSize_t7D6B36AEFF7B7AC442A8AE00010525F8EE70A4DE*)L_5)->___Size;
 		NullCheck(L_0);
-		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(34, L_0, L_2, L_4, L_6);
+		VirtualActionInvoker3< ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(33, L_0, L_2, L_4, L_6);
 		return;
 	}
 }
@@ -19095,7 +19079,7 @@ IL_0136_3:
 							MonoSslAuthenticationOptions_t50E83A9A2B726808720B74CBD44D3ABC2593B611* L_76 = __this->___options;
 							NullCheck(L_75);
 							MobileTlsContext_t456DDC89866EE34EF32EEF959AD92C9F17684476* L_77;
-							L_77 = VirtualFuncInvoker1< MobileTlsContext_t456DDC89866EE34EF32EEF959AD92C9F17684476*, MonoSslAuthenticationOptions_t50E83A9A2B726808720B74CBD44D3ABC2593B611* >::Invoke(40, L_75, L_76);
+							L_77 = VirtualFuncInvoker1< MobileTlsContext_t456DDC89866EE34EF32EEF959AD92C9F17684476*, MonoSslAuthenticationOptions_t50E83A9A2B726808720B74CBD44D3ABC2593B611* >::Invoke(39, L_75, L_76);
 							NullCheck(L_74);
 							L_74->___xobileTlsContext = L_77;
 							Il2CppCodeGenWriteBarrier((void**)(&L_74->___xobileTlsContext), (void*)L_77);
@@ -19934,7 +19918,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t U3CU3Ec__DisplayClass66_0_U3CInnerRea
 		int32_t L_8 = __this->___len;
 		NullCheck(L_1);
 		int32_t L_9;
-		L_9 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(31, L_1, L_4, L_7, L_8);
+		L_9 = VirtualFuncInvoker3< int32_t, ByteU5BU5D_tA6237BF417AE52AD70CFB4EF24A7A82613DF9031*, int32_t, int32_t >::Invoke(30, L_1, L_4, L_7, L_8);
 		return L_9;
 	}
 }
@@ -22903,7 +22887,7 @@ IL_007b_2:
 				L_34 = ServicePointManager_get_CheckCertificateRevocationList_m2B469F84124A2FB6AD78D7F07A8C50DD427E6204_inline(NULL);
 				NullCheck(L_28);
 				Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* L_35;
-				L_35 = VirtualFuncInvoker4< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, String_t*, X509CertificateCollection_t2900D71D188EDCA7DEB5077D36103EE5DA6805CE*, int32_t, bool >::Invoke(41, L_28, L_29, L_32, L_33, L_34);
+				L_35 = VirtualFuncInvoker4< Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572*, String_t*, X509CertificateCollection_t2900D71D188EDCA7DEB5077D36103EE5DA6805CE*, int32_t, bool >::Invoke(40, L_28, L_29, L_32, L_33, L_34);
 				NullCheck(L_35);
 				ConfiguredTaskAwaitable_tABE012B321A51A20F0D34F8122B9EAE3A054875C L_36;
 				L_36 = Task_ConfigureAwait_m0DD682B1D29B85067C993734C12E26554D6CBFF4(L_35, (bool)0, NULL);
@@ -22959,7 +22943,7 @@ IL_00f7_2:
 				SslStream_t19A079881850F9CAD7BAA6FB625BBC4647ED5A27* L_50 = L_49->___sslStream;
 				NullCheck(L_50);
 				X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4* L_51;
-				L_51 = VirtualFuncInvoker0< X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4* >::Invoke(42, L_50);
+				L_51 = VirtualFuncInvoker0< X509Certificate_t966CC553AF25AE7991F5B4C2AACBCF6C66C8F9C4* >::Invoke(41, L_50);
 				NullCheck(L_48);
 				ServicePoint_UpdateClientCertificate_m1C24F73E61F345E535D184110A3625B2EAF8C6AD(L_48, L_51, NULL);
 				goto IL_016c_1;
@@ -23508,7 +23492,7 @@ IL_000c:
 		HttpWebRequest_tDE1EF6EAE715BE99DB1645ED937A6A2AB930E7C9* L_3 = V_0;
 		NullCheck(L_3);
 		Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* L_4;
-		L_4 = VirtualFuncInvoker0< Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* >::Invoke(11, L_3);
+		L_4 = VirtualFuncInvoker0< Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E* >::Invoke(10, L_3);
 		NullCheck(L_2);
 		NetworkCredential_tC8E2931557131BA3E6F42A8E1E2A10EC62567313* L_5;
 		L_5 = InterfaceFuncInvoker2< NetworkCredential_tC8E2931557131BA3E6F42A8E1E2A10EC62567313*, Uri_t1500A52B5F71A04F5D05C0852D0F2A0941842A0E*, String_t* >::Invoke(0, ICredentials_t8FDA6AF64B852DA0631D4BE66962B20E51E230F0_il2cpp_TypeInfo_var, L_2, L_4, _stringLiteral3556155D25CE64C710CC61A8C9D361B08530D364);
